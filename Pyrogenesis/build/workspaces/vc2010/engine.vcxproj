@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{49DD154F-1A9B-144C-83C9-C7270A126401}</ProjectGuid>
+		<RootNamespace>engine</RootNamespace>
+		<Keyword>Win32Proj</Keyword>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>true</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\engine_Release\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">engine</TargetName>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\engine_Debug\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">engine_dbg</TargetName>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\engine;..\..\..\source;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\libxml2\include;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\zlib\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\enet\include;..\..\..\libraries\win32\libcurl\include;..\..\..\libraries\win32\openal\include;..\..\..\libraries\win32\vorbis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>false</MinimalRebuild>
+			<StringPooling>true</StringPooling>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\engine;..\..\..\source;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\libxml2\include;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\zlib\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\enet\include;..\..\..\libraries\win32\libcurl\include;..\..\..\libraries\win32\openal\include;..\..\..\libraries\win32\vorbis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	<Lib>
+		<OutputFile>$(OutDir)engine.lib</OutputFile>
+	</Lib>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<ProgramDataBaseFileName>$(OutDir)engine.pdb</ProgramDataBaseFileName>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\engine;..\..\..\source;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\libxml2\include;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\zlib\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\enet\include;..\..\..\libraries\win32\libcurl\include;..\..\..\libraries\win32\openal\include;..\..\..\libraries\win32\vorbis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>true</MinimalRebuild>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<SmallerTypeCheck>true</SmallerTypeCheck>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\engine;..\..\..\source;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\libxml2\include;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\zlib\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\enet\include;..\..\..\libraries\win32\libcurl\include;..\..\..\libraries\win32\openal\include;..\..\..\libraries\win32\vorbis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	<Lib>
+		<OutputFile>$(OutDir)engine_dbg.lib</OutputFile>
+	</Lib>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<ProgramDataBaseFileName>$(OutDir)engine_dbg.pdb</ProgramDataBaseFileName>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\ps\ArchiveBuilder.h" />
+		<ClInclude Include="..\..\..\source\ps\CacheLoader.h" />
+		<ClInclude Include="..\..\..\source\ps\CConsole.h" />
+		<ClInclude Include="..\..\..\source\ps\CLogger.h" />
+		<ClInclude Include="..\..\..\source\ps\Compress.h" />
+		<ClInclude Include="..\..\..\source\ps\ConfigDB.h" />
+		<ClInclude Include="..\..\..\source\ps\CStr.h" />
+		<ClInclude Include="..\..\..\source\ps\CStrIntern.h" />
+		<ClInclude Include="..\..\..\source\ps\CStrInternStatic.h" />
+		<ClInclude Include="..\..\..\source\ps\DllLoader.h" />
+		<ClInclude Include="..\..\..\source\ps\Errors.h" />
+		<ClInclude Include="..\..\..\source\ps\FileIo.h" />
+		<ClInclude Include="..\..\..\source\ps\Filesystem.h" />
+		<ClInclude Include="..\..\..\source\ps\Game.h" />
+		<ClInclude Include="..\..\..\source\ps\Globals.h" />
+		<ClInclude Include="..\..\..\source\ps\GUID.h" />
+		<ClInclude Include="..\..\..\source\ps\Hotkey.h" />
+		<ClInclude Include="..\..\..\source\ps\Joystick.h" />
+		<ClInclude Include="..\..\..\source\ps\KeyName.h" />
+		<ClInclude Include="..\..\..\source\ps\Loader.h" />
+		<ClInclude Include="..\..\..\source\ps\LoaderThunks.h" />
+		<ClInclude Include="..\..\..\source\ps\Overlay.h" />
+		<ClInclude Include="..\..\..\source\ps\Parser.h" />
+		<ClInclude Include="..\..\..\source\ps\Preprocessor.h" />
+		<ClInclude Include="..\..\..\source\ps\PreprocessorWrapper.h" />
+		<ClInclude Include="..\..\..\source\ps\Profile.h" />
+		<ClInclude Include="..\..\..\source\ps\Profiler2.h" />
+		<ClInclude Include="..\..\..\source\ps\Profiler2GPU.h" />
+		<ClInclude Include="..\..\..\source\ps\ProfileViewer.h" />
+		<ClInclude Include="..\..\..\source\ps\Pyrogenesis.h" />
+		<ClInclude Include="..\..\..\source\ps\Replay.h" />
+		<ClInclude Include="..\..\..\source\ps\SavedGame.h" />
+		<ClInclude Include="..\..\..\source\ps\Singleton.h" />
+		<ClInclude Include="..\..\..\source\ps\ThreadUtil.h" />
+		<ClInclude Include="..\..\..\source\ps\TouchInput.h" />
+		<ClInclude Include="..\..\..\source\ps\UniDoubler.h" />
+		<ClInclude Include="..\..\..\source\ps\UserReport.h" />
+		<ClInclude Include="..\..\..\source\ps\utf16string.h" />
+		<ClInclude Include="..\..\..\source\ps\Util.h" />
+		<ClInclude Include="..\..\..\source\ps\VideoMode.h" />
+		<ClInclude Include="..\..\..\source\ps\World.h" />
+		<ClInclude Include="..\..\..\source\ps\scripting\JSInterface_ConfigDB.h" />
+		<ClInclude Include="..\..\..\source\ps\scripting\JSInterface_Console.h" />
+		<ClInclude Include="..\..\..\source\ps\scripting\JSInterface_VFS.h" />
+		<ClInclude Include="..\..\..\source\ps\GameSetup\Atlas.h" />
+		<ClInclude Include="..\..\..\source\ps\GameSetup\CmdLineArgs.h" />
+		<ClInclude Include="..\..\..\source\ps\GameSetup\Config.h" />
+		<ClInclude Include="..\..\..\source\ps\GameSetup\GameSetup.h" />
+		<ClInclude Include="..\..\..\source\ps\GameSetup\HWDetect.h" />
+		<ClInclude Include="..\..\..\source\ps\GameSetup\Paths.h" />
+		<ClInclude Include="..\..\..\source\ps\XML\RelaxNG.h" />
+		<ClInclude Include="..\..\..\source\ps\XML\Xeromyces.h" />
+		<ClInclude Include="..\..\..\source\ps\XML\XeroXMB.h" />
+		<ClInclude Include="..\..\..\source\ps\XML\XMLWriter.h" />
+		<ClInclude Include="..\..\..\source\soundmanager\ISoundManager.h" />
+		<ClInclude Include="..\..\..\source\soundmanager\SoundManager.h" />
+		<ClInclude Include="..\..\..\source\soundmanager\data\ogg.h" />
+		<ClInclude Include="..\..\..\source\soundmanager\data\OggData.h" />
+		<ClInclude Include="..\..\..\source\soundmanager\data\SoundData.h" />
+		<ClInclude Include="..\..\..\source\soundmanager\items\CBufferItem.h" />
+		<ClInclude Include="..\..\..\source\soundmanager\items\CSoundBase.h" />
+		<ClInclude Include="..\..\..\source\soundmanager\items\CSoundItem.h" />
+		<ClInclude Include="..\..\..\source\soundmanager\items\CStreamItem.h" />
+		<ClInclude Include="..\..\..\source\soundmanager\items\ISoundItem.h" />
+		<ClInclude Include="..\..\..\source\soundmanager\scripting\JSInterface_Sound.h" />
+		<ClInclude Include="..\..\..\source\soundmanager\scripting\SoundGroup.h" />
+		<ClInclude Include="..\..\..\source\maths\BoundingBoxAligned.h" />
+		<ClInclude Include="..\..\..\source\maths\BoundingBoxOriented.h" />
+		<ClInclude Include="..\..\..\source\maths\Brush.h" />
+		<ClInclude Include="..\..\..\source\maths\Ease.h" />
+		<ClInclude Include="..\..\..\source\maths\Fixed.h" />
+		<ClInclude Include="..\..\..\source\maths\FixedVector2D.h" />
+		<ClInclude Include="..\..\..\source\maths\FixedVector3D.h" />
+		<ClInclude Include="..\..\..\source\maths\MathUtil.h" />
+		<ClInclude Include="..\..\..\source\maths\Matrix3D.h" />
+		<ClInclude Include="..\..\..\source\maths\MD5.h" />
+		<ClInclude Include="..\..\..\source\maths\Noise.h" />
+		<ClInclude Include="..\..\..\source\maths\NUSpline.h" />
+		<ClInclude Include="..\..\..\source\maths\Plane.h" />
+		<ClInclude Include="..\..\..\source\maths\Quaternion.h" />
+		<ClInclude Include="..\..\..\source\maths\Random.h" />
+		<ClInclude Include="..\..\..\source\maths\Sqrt.h" />
+		<ClInclude Include="..\..\..\source\maths\Vector2D.h" />
+		<ClInclude Include="..\..\..\source\maths\Vector3D.h" />
+		<ClInclude Include="..\..\..\source\maths\Vector4D.h" />
+		<ClInclude Include="..\..\..\source\pch\engine\precompiled.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\ps\ArchiveBuilder.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\CacheLoader.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\CConsole.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\CLogger.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Compress.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\ConfigDB.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\CStr.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\CStrIntern.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\DllLoader.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Errors.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\FileIo.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Filesystem.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Game.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Globals.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GUID.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Hotkey.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Joystick.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\KeyName.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Loader.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Overlay.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Parser.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Preprocessor.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\PreprocessorWrapper.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Profile.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Profiler2.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Profiler2GPU.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\ProfileViewer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Pyrogenesis.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Replay.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\SavedGame.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\ThreadUtil.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\TouchInput.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\UserReport.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Util.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\VideoMode.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\World.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\scripting\JSInterface_ConfigDB.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\scripting\JSInterface_Console.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\scripting\JSInterface_VFS.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\Atlas.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\CmdLineArgs.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\Config.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\GameSetup.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\HWDetect.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\Paths.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\RelaxNG.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\Xeromyces.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\XeroXMB.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\XMLWriter.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\SoundManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\data\ogg.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\data\OggData.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\data\SoundData.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\items\CBufferItem.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\items\CSoundBase.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\items\CSoundItem.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\items\CStreamItem.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\scripting\JSInterface_Sound.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\scripting\SoundGroup.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\BoundingBoxAligned.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\BoundingBoxOriented.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Brush.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Fixed.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Matrix3D.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\MD5.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Noise.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\NUSpline.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Plane.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Quaternion.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Sqrt.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Vector3D.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\engine\precompiled.cpp">
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+		</ClCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>

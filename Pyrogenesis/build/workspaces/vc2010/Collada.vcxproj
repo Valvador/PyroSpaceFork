@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{BBC0379B-55A0-EC4F-B31A-4393210E5305}</ProjectGuid>
+		<RootNamespace>Collada</RootNamespace>
+		<Keyword>Win32Proj</Keyword>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>DynamicLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>DynamicLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>true</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\Collada_Release\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Collada</TargetName>
+		<IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</IgnoreImportLibrary>
+		<LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\Collada_Debug\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Collada_dbg</TargetName>
+		<IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</IgnoreImportLibrary>
+		<LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\collada;..\..\..\libraries\source\fcollada\include;..\..\..\libraries\win32\libxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>false</MinimalRebuild>
+			<StringPooling>true</StringPooling>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\collada;..\..\..\libraries\source\fcollada\include;..\..\..\libraries\win32\libxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+		<Link>
+			<AdditionalDependencies>FCollada.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)Collada.dll</OutputFile>
+			<AdditionalLibraryDirectories>..\..\..\binaries\system;..\..\..\libraries\source\fcollada\lib;..\..\..\libraries\win32\libxml2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<ProgramDataBaseFileName>$(OutDir)Collada.pdb</ProgramDataBaseFileName>
+			<ImportLibrary>..\..\..\binaries\system\Collada.lib</ImportLibrary>
+			<TargetMachine>MachineX86</TargetMachine>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\collada;..\..\..\libraries\source\fcollada\include;..\..\..\libraries\win32\libxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>true</MinimalRebuild>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<SmallerTypeCheck>true</SmallerTypeCheck>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\collada;..\..\..\libraries\source\fcollada\include;..\..\..\libraries\win32\libxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+		<Link>
+			<AdditionalDependencies>FColladaD.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)Collada_dbg.dll</OutputFile>
+			<AdditionalLibraryDirectories>..\..\..\binaries\system;..\..\..\libraries\source\fcollada\lib;..\..\..\libraries\win32\libxml2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<ProgramDataBaseFileName>$(OutDir)Collada_dbg.pdb</ProgramDataBaseFileName>
+			<ImportLibrary>..\..\..\binaries\system\Collada_dbg.lib</ImportLibrary>
+			<TargetMachine>MachineX86</TargetMachine>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\collada\CommonConvert.h" />
+		<ClInclude Include="..\..\..\source\collada\Decompose.h" />
+		<ClInclude Include="..\..\..\source\collada\DLL.h" />
+		<ClInclude Include="..\..\..\source\collada\GeomReindex.h" />
+		<ClInclude Include="..\..\..\source\collada\Maths.h" />
+		<ClInclude Include="..\..\..\source\collada\PMDConvert.h" />
+		<ClInclude Include="..\..\..\source\collada\precompiled.h" />
+		<ClInclude Include="..\..\..\source\collada\PSAConvert.h" />
+		<ClInclude Include="..\..\..\source\collada\StdSkeletons.h" />
+		<ClInclude Include="..\..\..\source\collada\XMLFix.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\collada\CommonConvert.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\Decompose.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\DLL.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\GeomReindex.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\Maths.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\PMDConvert.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\precompiled.cpp">
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\PSAConvert.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\StdSkeletons.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\XMLFix.cpp">
+		</ClCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>

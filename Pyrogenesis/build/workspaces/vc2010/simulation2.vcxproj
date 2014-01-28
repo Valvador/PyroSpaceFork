@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{97E2E8A8-9E8F-634D-8A1C-CA7444E3CF71}</ProjectGuid>
+    <RootNamespace>simulation2</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\binaries\system\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\simulation2_Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">simulation2</TargetName>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\binaries\system\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\simulation2_Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">simulation2_dbg</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\source\pch\simulation2;..\..\..\source;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\source\spidermonkey\include-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\source\pch\simulation2;..\..\..\source;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\source\spidermonkey\include-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)simulation2.lib</OutputFile>
+    </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ProgramDataBaseFileName>$(OutDir)simulation2.pdb</ProgramDataBaseFileName>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\source\pch\simulation2;..\..\..\source;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\source\spidermonkey\include-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\source\pch\simulation2;..\..\..\source;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\source\spidermonkey\include-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)simulation2_dbg.lib</OutputFile>
+    </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDataBaseFileName>$(OutDir)simulation2_dbg.pdb</ProgramDataBaseFileName>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmp3DUnitMotion.h" />
+    <ClInclude Include="..\..\..\source\simulation2\MessageTypes.h" />
+    <ClInclude Include="..\..\..\source\simulation2\Simulation2.h" />
+    <ClInclude Include="..\..\..\source\simulation2\TypeList.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\CCmpPathfinder_Common.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpAIInterface.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpAIManager.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpCommandQueue.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpDecay.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpFootprint.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpGuiInterface.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpIdentity.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpMinimap.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpMotion.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpObstruction.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpObstructionManager.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpOverlayRenderer.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpOwnership.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpParticleManager.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpPathfinder.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpPlayer.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpPlayerManager.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpPosition.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpProjectileManager.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpRallyPointRenderer.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpRangeManager.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpSelectable.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpSettlement.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpSoundManager.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpTechnologyTemplateManager.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpTemplateManager.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpTerrain.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpTerritoryInfluence.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpTerritoryManager.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpTest.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpUnitMotion.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpUnknownScript.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpValueModificationManager.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpVision.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpVisual.h" />
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpWaterManager.h" />
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Geometry.h" />
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Grid.h" />
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Player.h" />
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Position.h" />
+    <ClInclude Include="..\..\..\source\simulation2\helpers\PriorityQueue.h" />
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Render.h" />
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Selection.h" />
+    <ClInclude Include="..\..\..\source\simulation2\helpers\SimulationCommand.h" />
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Spatial.h" />
+    <ClInclude Include="..\..\..\source\simulation2\scripting\ScriptComponent.h" />
+    <ClInclude Include="..\..\..\source\simulation2\serialization\BinarySerializer.h" />
+    <ClInclude Include="..\..\..\source\simulation2\serialization\DebugSerializer.h" />
+    <ClInclude Include="..\..\..\source\simulation2\serialization\HashSerializer.h" />
+    <ClInclude Include="..\..\..\source\simulation2\serialization\IDeserializer.h" />
+    <ClInclude Include="..\..\..\source\simulation2\serialization\ISerializer.h" />
+    <ClInclude Include="..\..\..\source\simulation2\serialization\SerializedScriptTypes.h" />
+    <ClInclude Include="..\..\..\source\simulation2\serialization\SerializeTemplates.h" />
+    <ClInclude Include="..\..\..\source\simulation2\serialization\StdDeserializer.h" />
+    <ClInclude Include="..\..\..\source\simulation2\serialization\StdSerializer.h" />
+    <ClInclude Include="..\..\..\source\simulation2\system\CmpPtr.h" />
+    <ClInclude Include="..\..\..\source\simulation2\system\Component.h" />
+    <ClInclude Include="..\..\..\source\simulation2\system\ComponentManager.h" />
+    <ClInclude Include="..\..\..\source\simulation2\system\Components.h" />
+    <ClInclude Include="..\..\..\source\simulation2\system\ComponentTest.h" />
+    <ClInclude Include="..\..\..\source\simulation2\system\Entity.h" />
+    <ClInclude Include="..\..\..\source\simulation2\system\EntityMap.h" />
+    <ClInclude Include="..\..\..\source\simulation2\system\IComponent.h" />
+    <ClInclude Include="..\..\..\source\simulation2\system\Interface.h" />
+    <ClInclude Include="..\..\..\source\simulation2\system\InterfaceScripted.h" />
+    <ClInclude Include="..\..\..\source\simulation2\system\Message.h" />
+    <ClInclude Include="..\..\..\source\simulation2\system\ParamNode.h" />
+    <ClInclude Include="..\..\..\source\simulation2\system\SimContext.h" />
+    <ClInclude Include="..\..\..\source\pch\simulation2\precompiled.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmp3DUnitMotion.cpp" />
+    <ClCompile Include="..\..\..\source\simulation2\Simulation2.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpAIManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpCommandQueue.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpDecay.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpFootprint.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpMinimap.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpMotionBall.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpObstruction.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpObstructionManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpOverlayRenderer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpOwnership.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpParticleManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpPathfinder.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpPathfinder_Tile.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpPathfinder_Vertex.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpPosition.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpProjectileManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpRallyPointRenderer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpRangeManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpSelectable.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpSoundManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpTemplateManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpTerrain.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpTerritoryInfluence.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpTerritoryManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpTest.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpUnitMotion.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpVision.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpVisualActor.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpWaterManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpAIInterface.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpAIManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpCommandQueue.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpDecay.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpFootprint.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpGuiInterface.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpIdentity.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpMinimap.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpMotion.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpObstruction.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpObstructionManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpOverlayRenderer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpOwnership.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpParticleManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpPathfinder.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpPlayer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpPlayerManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpPosition.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpProjectileManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpRallyPointRenderer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpRangeManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpSelectable.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpSettlement.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpSoundManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpTechnologyTemplateManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpTemplateManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpTerrain.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpTerritoryInfluence.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpTerritoryManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpTest.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpUnitMotion.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpUnknownScript.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpValueModificationManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpVision.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpVisual.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpWaterManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\helpers\Geometry.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\helpers\Render.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\helpers\Selection.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\scripting\EngineScriptConversions.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\scripting\MessageTypeConversions.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\scripting\ScriptComponent.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\BinarySerializer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\DebugSerializer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\HashSerializer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\IDeserializer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\ISerializer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\StdDeserializer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\StdSerializer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\system\CmpPtr.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\system\ComponentManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\system\ComponentManagerSerialization.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\system\IComponent.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\system\ParamNode.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\system\SimContext.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\pch\simulation2\precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

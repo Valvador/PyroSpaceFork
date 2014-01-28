@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{FD33FC87-B79A-5C4A-9DD4-05C221373989}</ProjectGuid>
+		<RootNamespace>network</RootNamespace>
+		<Keyword>Win32Proj</Keyword>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>true</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\network_Release\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">network</TargetName>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\network_Debug\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">network_dbg</TargetName>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\network;..\..\..\source;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\source\enet\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\miniupnpc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>false</MinimalRebuild>
+			<StringPooling>true</StringPooling>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\network;..\..\..\source;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\source\enet\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\miniupnpc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	<Lib>
+		<OutputFile>$(OutDir)network.lib</OutputFile>
+	</Lib>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<ProgramDataBaseFileName>$(OutDir)network.pdb</ProgramDataBaseFileName>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\network;..\..\..\source;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\source\enet\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\miniupnpc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>true</MinimalRebuild>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<SmallerTypeCheck>true</SmallerTypeCheck>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\network;..\..\..\source;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\source\enet\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\miniupnpc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	<Lib>
+		<OutputFile>$(OutDir)network_dbg.lib</OutputFile>
+	</Lib>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<ProgramDataBaseFileName>$(OutDir)network_dbg.pdb</ProgramDataBaseFileName>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\network\fsm.h" />
+		<ClInclude Include="..\..\..\source\network\NetClient.h" />
+		<ClInclude Include="..\..\..\source\network\NetFileTransfer.h" />
+		<ClInclude Include="..\..\..\source\network\NetHost.h" />
+		<ClInclude Include="..\..\..\source\network\NetMessage.h" />
+		<ClInclude Include="..\..\..\source\network\NetMessages.h" />
+		<ClInclude Include="..\..\..\source\network\NetServer.h" />
+		<ClInclude Include="..\..\..\source\network\NetSession.h" />
+		<ClInclude Include="..\..\..\source\network\NetStats.h" />
+		<ClInclude Include="..\..\..\source\network\NetTurnManager.h" />
+		<ClInclude Include="..\..\..\source\network\NMTCreator.h" />
+		<ClInclude Include="..\..\..\source\network\Serialization.h" />
+		<ClInclude Include="..\..\..\source\network\StringConverters.h" />
+		<ClInclude Include="..\..\..\source\pch\network\precompiled.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\network\fsm.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetClient.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetFileTransfer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetHost.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetMessage.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetMessageSim.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetServer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetSession.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetStats.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetTurnManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\network\precompiled.cpp">
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+		</ClCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>

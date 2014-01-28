@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="tools">
+			<UniqueIdentifier>{38167391-81EE-9940-96D3-3820A20E8FF2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas">
+			<UniqueIdentifier>{60401CBD-65F4-6949-BFE7-11E80DED2DCA}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasScript">
+			<UniqueIdentifier>{E215A5E3-2018-F740-B674-A911BA551F0A}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasScript\ScriptInterface.h">
+			<Filter>tools\atlas\AtlasScript</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasScript\ScriptInterface.cpp">
+			<Filter>tools\atlas\AtlasScript</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\..\source\tools\atlas\AtlasScript\NativeWrapper.inl">
+			<Filter>tools\atlas\AtlasScript</Filter>
+		</None>
+	</ItemGroup>
+</Project>

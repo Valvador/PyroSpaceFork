@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="simulation2">
+      <UniqueIdentifier>{B08D2886-F7C3-AB41-8E8E-4162D725F755}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simulation2\components">
+      <UniqueIdentifier>{F6BF8A82-E28C-CC48-A1E5-5C958B76E23A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simulation2\helpers">
+      <UniqueIdentifier>{8DE46DF4-7343-B243-983F-DC70EFE988E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simulation2\scripting">
+      <UniqueIdentifier>{54BE9B34-F362-164E-AE13-50EAF95696E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simulation2\serialization">
+      <UniqueIdentifier>{020204B3-A9F9-704D-8A3C-8AE71A4458CA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simulation2\system">
+      <UniqueIdentifier>{40D1EDF2-2F9A-D646-9DF7-E9BCC6174E1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{CBCFFA21-ADD4-E541-ABFF-52F385EA166A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch\simulation2">
+      <UniqueIdentifier>{74F37382-CCC4-BB42-9BC7-34344BEB3814}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\simulation2\MessageTypes.h">
+      <Filter>simulation2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\Simulation2.h">
+      <Filter>simulation2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\TypeList.h">
+      <Filter>simulation2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\CCmpPathfinder_Common.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpAIInterface.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpAIManager.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpCommandQueue.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpDecay.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpFootprint.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpGuiInterface.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpIdentity.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpMinimap.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpMotion.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpObstruction.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpObstructionManager.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpOverlayRenderer.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpOwnership.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpParticleManager.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpPathfinder.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpPlayer.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpPlayerManager.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpPosition.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpProjectileManager.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpRallyPointRenderer.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpRangeManager.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpSelectable.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpSettlement.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpSoundManager.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpTechnologyTemplateManager.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpTemplateManager.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpTerrain.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpTerritoryInfluence.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpTerritoryManager.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpTest.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpUnitMotion.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpUnknownScript.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpValueModificationManager.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpVision.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpVisual.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmpWaterManager.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Geometry.h">
+      <Filter>simulation2\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Grid.h">
+      <Filter>simulation2\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Player.h">
+      <Filter>simulation2\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Position.h">
+      <Filter>simulation2\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\helpers\PriorityQueue.h">
+      <Filter>simulation2\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Render.h">
+      <Filter>simulation2\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Selection.h">
+      <Filter>simulation2\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\helpers\SimulationCommand.h">
+      <Filter>simulation2\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\helpers\Spatial.h">
+      <Filter>simulation2\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\scripting\ScriptComponent.h">
+      <Filter>simulation2\scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\serialization\BinarySerializer.h">
+      <Filter>simulation2\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\serialization\DebugSerializer.h">
+      <Filter>simulation2\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\serialization\HashSerializer.h">
+      <Filter>simulation2\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\serialization\IDeserializer.h">
+      <Filter>simulation2\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\serialization\ISerializer.h">
+      <Filter>simulation2\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\serialization\SerializedScriptTypes.h">
+      <Filter>simulation2\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\serialization\SerializeTemplates.h">
+      <Filter>simulation2\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\serialization\StdDeserializer.h">
+      <Filter>simulation2\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\serialization\StdSerializer.h">
+      <Filter>simulation2\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\system\CmpPtr.h">
+      <Filter>simulation2\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\system\Component.h">
+      <Filter>simulation2\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\system\ComponentManager.h">
+      <Filter>simulation2\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\system\Components.h">
+      <Filter>simulation2\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\system\ComponentTest.h">
+      <Filter>simulation2\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\system\Entity.h">
+      <Filter>simulation2\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\system\EntityMap.h">
+      <Filter>simulation2\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\system\IComponent.h">
+      <Filter>simulation2\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\system\Interface.h">
+      <Filter>simulation2\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\system\InterfaceScripted.h">
+      <Filter>simulation2\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\system\Message.h">
+      <Filter>simulation2\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\system\ParamNode.h">
+      <Filter>simulation2\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\system\SimContext.h">
+      <Filter>simulation2\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\pch\simulation2\precompiled.h">
+      <Filter>pch\simulation2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\simulation2\components\ICmp3DUnitMotion.h">
+      <Filter>simulation2\components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\simulation2\Simulation2.cpp">
+      <Filter>simulation2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpAIManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpCommandQueue.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpDecay.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpFootprint.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpMinimap.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpMotionBall.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpObstruction.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpObstructionManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpOverlayRenderer.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpOwnership.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpParticleManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpPathfinder.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpPathfinder_Tile.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpPathfinder_Vertex.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpPosition.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpProjectileManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpRallyPointRenderer.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpRangeManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpSelectable.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpSoundManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpTemplateManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpTerrain.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpTerritoryInfluence.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpTerritoryManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpTest.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpUnitMotion.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpVision.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpVisualActor.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\CCmpWaterManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpAIInterface.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpAIManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpCommandQueue.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpDecay.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpFootprint.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpGuiInterface.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpIdentity.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpMinimap.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpMotion.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpObstruction.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpObstructionManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpOverlayRenderer.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpOwnership.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpParticleManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpPathfinder.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpPlayer.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpPlayerManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpPosition.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpProjectileManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpRallyPointRenderer.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpRangeManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpSelectable.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpSettlement.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpSoundManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpTechnologyTemplateManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpTemplateManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpTerrain.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpTerritoryInfluence.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpTerritoryManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpTest.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpUnitMotion.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpUnknownScript.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpValueModificationManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpVision.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpVisual.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmpWaterManager.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\helpers\Geometry.cpp">
+      <Filter>simulation2\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\helpers\Render.cpp">
+      <Filter>simulation2\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\helpers\Selection.cpp">
+      <Filter>simulation2\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\scripting\EngineScriptConversions.cpp">
+      <Filter>simulation2\scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\scripting\MessageTypeConversions.cpp">
+      <Filter>simulation2\scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\scripting\ScriptComponent.cpp">
+      <Filter>simulation2\scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\BinarySerializer.cpp">
+      <Filter>simulation2\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\DebugSerializer.cpp">
+      <Filter>simulation2\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\HashSerializer.cpp">
+      <Filter>simulation2\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\IDeserializer.cpp">
+      <Filter>simulation2\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\ISerializer.cpp">
+      <Filter>simulation2\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\StdDeserializer.cpp">
+      <Filter>simulation2\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\serialization\StdSerializer.cpp">
+      <Filter>simulation2\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\system\CmpPtr.cpp">
+      <Filter>simulation2\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\system\ComponentManager.cpp">
+      <Filter>simulation2\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\system\ComponentManagerSerialization.cpp">
+      <Filter>simulation2\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\system\IComponent.cpp">
+      <Filter>simulation2\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\system\ParamNode.cpp">
+      <Filter>simulation2\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\system\SimContext.cpp">
+      <Filter>simulation2\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\pch\simulation2\precompiled.cpp">
+      <Filter>pch\simulation2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\simulation2\components\ICmp3DUnitMotion.cpp">
+      <Filter>simulation2\components</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

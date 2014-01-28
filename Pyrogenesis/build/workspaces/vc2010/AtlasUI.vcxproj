@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{259234C8-8C4B-AA49-85D5-35F77F39B4CD}</ProjectGuid>
+		<RootNamespace>AtlasUI</RootNamespace>
+		<Keyword>Win32Proj</Keyword>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>DynamicLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>DynamicLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>true</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\AtlasUI_Release\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AtlasUI</TargetName>
+		<IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</IgnoreImportLibrary>
+		<LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\AtlasUI_Debug\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AtlasUI_dbg</TargetName>
+		<IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</IgnoreImportLibrary>
+		<LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\tools\atlas\AtlasUI\Misc;..\..\..\source\tools\atlas\AtlasUI;..\..\..\source\tools\atlas;..\..\..\source\tools\atlas\AtlasUI\CustomControls;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\libxml2\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\wxwidgets\include\msvc;..\..\..\libraries\win32\wxwidgets\include;..\..\..\libraries\win32\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>false</MinimalRebuild>
+			<StringPooling>true</StringPooling>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\tools\atlas\AtlasUI\Misc;..\..\..\source\tools\atlas\AtlasUI;..\..\..\source\tools\atlas;..\..\..\source\tools\atlas\AtlasUI\CustomControls;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\libxml2\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\wxwidgets\include\msvc;..\..\..\libraries\win32\wxwidgets\include;..\..\..\libraries\win32\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+		<Link>
+			<AdditionalDependencies>..\..\..\binaries\system\AtlasObject.lib;..\..\..\binaries\system\AtlasScript.lib;comsuppw.lib;libxml2.lib;mozjs185-ps-release.lib;wxmsw28u_gl.lib;zlib1.lib;winmm.lib;comctl32.lib;rpcrt4.lib;delayimp.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)AtlasUI.dll</OutputFile>
+			<AdditionalLibraryDirectories>..\..\..\binaries\system;..\..\..\libraries\win32\boost\lib;..\..\..\libraries\win32\libxml2\lib;..\..\..\libraries\win32\sdl\lib;..\..\..\libraries\source\spidermonkey\lib;..\..\..\libraries\win32\wxwidgets\lib\vc_lib;..\..\..\libraries\win32\zlib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<ProgramDataBaseFileName>$(OutDir)AtlasUI.pdb</ProgramDataBaseFileName>
+			<ImportLibrary>..\..\..\binaries\system\AtlasUI.lib</ImportLibrary>
+			<TargetMachine>MachineX86</TargetMachine>
+			<AdditionalOptions>/DELAYLOAD:zlib1.dll %(AdditionalOptions)</AdditionalOptions>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\tools\atlas\AtlasUI\Misc;..\..\..\source\tools\atlas\AtlasUI;..\..\..\source\tools\atlas;..\..\..\source\tools\atlas\AtlasUI\CustomControls;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\libxml2\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\wxwidgets\include\msvc;..\..\..\libraries\win32\wxwidgets\include;..\..\..\libraries\win32\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>true</MinimalRebuild>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<SmallerTypeCheck>true</SmallerTypeCheck>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\tools\atlas\AtlasUI\Misc;..\..\..\source\tools\atlas\AtlasUI;..\..\..\source\tools\atlas;..\..\..\source\tools\atlas\AtlasUI\CustomControls;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\libxml2\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\wxwidgets\include\msvc;..\..\..\libraries\win32\wxwidgets\include;..\..\..\libraries\win32\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+		<Link>
+			<AdditionalDependencies>..\..\..\binaries\system\AtlasObject_dbg.lib;..\..\..\binaries\system\AtlasScript_dbg.lib;comsuppwd.lib;libxml2.lib;mozjs185-ps-debug.lib;wxmsw28ud_gl.lib;zlib1d.lib;winmm.lib;comctl32.lib;rpcrt4.lib;delayimp.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)AtlasUI_dbg.dll</OutputFile>
+			<AdditionalLibraryDirectories>..\..\..\binaries\system;..\..\..\libraries\win32\boost\lib;..\..\..\libraries\win32\libxml2\lib;..\..\..\libraries\win32\sdl\lib;..\..\..\libraries\source\spidermonkey\lib;..\..\..\libraries\win32\wxwidgets\lib\vc_lib;..\..\..\libraries\win32\zlib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<ProgramDataBaseFileName>$(OutDir)AtlasUI_dbg.pdb</ProgramDataBaseFileName>
+			<ImportLibrary>..\..\..\binaries\system\AtlasUI_dbg.lib</ImportLibrary>
+			<TargetMachine>MachineX86</TargetMachine>
+			<AdditionalOptions>/DELAYLOAD:zlib1d.dll %(AdditionalOptions)</AdditionalOptions>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\ActorEditor.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\ActorEditorListCtrl.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\AnimListEditor.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\PropListEditor.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\TexListEditor.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Buttons\ActionButton.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Buttons\ToolButton.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Canvas\Canvas.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\ColourDialog\ColourDialog.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\DraggableListCtrl\DraggableListCtrl.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\DraggableListCtrl\DraggableListCtrlCommands.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\EditableListCtrl.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\EditableListCtrlCommands.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\FieldEditCtrl.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\ListCtrlValidator.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\QuickComboBox.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\QuickFileCtrl.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\QuickTextCtrl.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\FileHistory\FileHistory.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\HighResTimer\HighResTimer.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\MapDialog\MapDialog.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\SnapSplitterWindow\SnapSplitterWindow.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\VirtualDirTreeCtrl\virtualdirtreectrl.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Windows\AtlasDialog.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Windows\AtlasWindow.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ErrorReporter\ErrorReporter.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasClipboard.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasEventLoop.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasWindowCommand.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasWindowCommandProc.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\Datafile.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\IAtlasSerialiser.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\Observable.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\Misc\actored.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\Misc\DLLInterface.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\Misc\KeyMap.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\Misc\precompiled.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\ScenarioEditor.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\SectionLayout.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Common\Sidebar.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Environment\Environment.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Environment\LightControl.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Map\Map.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Object\Object.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Object\VariationControl.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Player\Player.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Terrain\Terrain.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\Brushes.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\MiscState.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\ObjectSettings.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\Tools.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\ActorEditor.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\ActorEditorListCtrl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\AnimListEditor.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\PropListEditor.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\TexListEditor.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Buttons\ActionButton.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Buttons\ToolButton.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Canvas\Canvas.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\ColourDialog\ColourDialog.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\DraggableListCtrl\DraggableListCtrl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\DraggableListCtrl\DraggableListCtrlCommands.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\EditableListCtrl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\EditableListCtrlCommands.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\FieldEditCtrl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\ListCtrlValidator.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\QuickComboBox.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\QuickFileCtrl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\QuickTextCtrl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\FileHistory\FileHistory.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\HighResTimer\HighResTimer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\MapDialog\MapDialog.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\SnapSplitterWindow\SnapSplitterWindow.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\VirtualDirTreeCtrl\virtualdirtreectrl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Windows\AtlasDialog.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Windows\AtlasWindow.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ErrorReporter\ErrorReporter.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasClipboard.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasEventLoop.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasWindowCommand.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasWindowCommandProc.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\General\Datafile.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\General\Observable.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\Misc\DLLInterface.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\Misc\KeyMap.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\Misc\precompiled.cpp">
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\ScenarioEditor.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\SectionLayout.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Common\Sidebar.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Environment\Environment.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Environment\LightControl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Map\Map.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Object\Object.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Object\VariationControl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Player\Player.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Terrain\Terrain.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\ActorViewerTool.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\AlterElevation.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\FillTerrain.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\FlattenElevation.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\PaintTerrain.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\PikeElevation.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\PlaceObject.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\ReplaceTerrain.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\SmoothElevation.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\TransformObject.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\Brushes.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\MiscState.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\ObjectSettings.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\Tools.cpp">
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="..\..\..\source\tools\atlas\AtlasUI\Misc\atlas.rc" />
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>

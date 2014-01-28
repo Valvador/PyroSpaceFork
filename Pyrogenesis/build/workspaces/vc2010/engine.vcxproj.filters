@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="ps">
+			<UniqueIdentifier>{9B867F5F-C87C-7140-8493-08994CE1BD1E}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="ps\scripting">
+			<UniqueIdentifier>{EE3A597C-072C-9141-98AE-A152F3F65DCF}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="ps\GameSetup">
+			<UniqueIdentifier>{F328ECEF-31FA-2247-BF19-6DA72FD48FA8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="ps\XML">
+			<UniqueIdentifier>{538AAF0E-5A60-C249-8EFA-14C79631CEEA}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="soundmanager">
+			<UniqueIdentifier>{3D5BA9CD-6DA0-8A41-A5C5-6C524FD38FF8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="soundmanager\data">
+			<UniqueIdentifier>{B3FBF4AC-554D-F947-9109-1AC2BC4648CD}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="soundmanager\items">
+			<UniqueIdentifier>{B9C34290-0D6B-704F-8CC0-84C0F00BB91E}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="soundmanager\scripting">
+			<UniqueIdentifier>{094288B9-7C1F-F646-84B5-CBC6FA7EC099}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="maths">
+			<UniqueIdentifier>{7480EBB6-D6D0-C84B-97FA-F2A7DA6D2355}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch">
+			<UniqueIdentifier>{A5C04098-B504-EF47-8E97-FEFD5B8E1583}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch\engine">
+			<UniqueIdentifier>{C4D303F5-F060-514D-8CD9-722E3ACFEDEC}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\ps\ArchiveBuilder.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\CacheLoader.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\CConsole.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\CLogger.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Compress.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\ConfigDB.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\CStr.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\CStrIntern.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\CStrInternStatic.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\DllLoader.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Errors.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\FileIo.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Filesystem.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Game.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Globals.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\GUID.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Hotkey.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Joystick.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\KeyName.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Loader.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\LoaderThunks.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Overlay.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Parser.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Preprocessor.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\PreprocessorWrapper.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Profile.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Profiler2.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Profiler2GPU.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\ProfileViewer.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Pyrogenesis.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Replay.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\SavedGame.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Singleton.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\ThreadUtil.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\TouchInput.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\UniDoubler.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\UserReport.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\utf16string.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\Util.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\VideoMode.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\World.h">
+			<Filter>ps</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\scripting\JSInterface_ConfigDB.h">
+			<Filter>ps\scripting</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\scripting\JSInterface_Console.h">
+			<Filter>ps\scripting</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\scripting\JSInterface_VFS.h">
+			<Filter>ps\scripting</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\GameSetup\Atlas.h">
+			<Filter>ps\GameSetup</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\GameSetup\CmdLineArgs.h">
+			<Filter>ps\GameSetup</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\GameSetup\Config.h">
+			<Filter>ps\GameSetup</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\GameSetup\GameSetup.h">
+			<Filter>ps\GameSetup</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\GameSetup\HWDetect.h">
+			<Filter>ps\GameSetup</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\GameSetup\Paths.h">
+			<Filter>ps\GameSetup</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\XML\RelaxNG.h">
+			<Filter>ps\XML</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\XML\Xeromyces.h">
+			<Filter>ps\XML</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\XML\XeroXMB.h">
+			<Filter>ps\XML</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\ps\XML\XMLWriter.h">
+			<Filter>ps\XML</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\soundmanager\ISoundManager.h">
+			<Filter>soundmanager</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\soundmanager\SoundManager.h">
+			<Filter>soundmanager</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\soundmanager\data\ogg.h">
+			<Filter>soundmanager\data</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\soundmanager\data\OggData.h">
+			<Filter>soundmanager\data</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\soundmanager\data\SoundData.h">
+			<Filter>soundmanager\data</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\soundmanager\items\CBufferItem.h">
+			<Filter>soundmanager\items</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\soundmanager\items\CSoundBase.h">
+			<Filter>soundmanager\items</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\soundmanager\items\CSoundItem.h">
+			<Filter>soundmanager\items</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\soundmanager\items\CStreamItem.h">
+			<Filter>soundmanager\items</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\soundmanager\items\ISoundItem.h">
+			<Filter>soundmanager\items</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\soundmanager\scripting\JSInterface_Sound.h">
+			<Filter>soundmanager\scripting</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\soundmanager\scripting\SoundGroup.h">
+			<Filter>soundmanager\scripting</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\BoundingBoxAligned.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\BoundingBoxOriented.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\Brush.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\Ease.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\Fixed.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\FixedVector2D.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\FixedVector3D.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\MathUtil.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\Matrix3D.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\MD5.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\Noise.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\NUSpline.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\Plane.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\Quaternion.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\Random.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\Sqrt.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\Vector2D.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\Vector3D.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\maths\Vector4D.h">
+			<Filter>maths</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\pch\engine\precompiled.h">
+			<Filter>pch\engine</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\ps\ArchiveBuilder.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\CacheLoader.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\CConsole.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\CLogger.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Compress.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\ConfigDB.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\CStr.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\CStrIntern.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\DllLoader.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Errors.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\FileIo.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Filesystem.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Game.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Globals.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GUID.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Hotkey.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Joystick.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\KeyName.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Loader.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Overlay.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Parser.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Preprocessor.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\PreprocessorWrapper.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Profile.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Profiler2.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Profiler2GPU.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\ProfileViewer.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Pyrogenesis.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Replay.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\SavedGame.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\ThreadUtil.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\TouchInput.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\UserReport.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\Util.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\VideoMode.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\World.cpp">
+			<Filter>ps</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\scripting\JSInterface_ConfigDB.cpp">
+			<Filter>ps\scripting</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\scripting\JSInterface_Console.cpp">
+			<Filter>ps\scripting</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\scripting\JSInterface_VFS.cpp">
+			<Filter>ps\scripting</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\Atlas.cpp">
+			<Filter>ps\GameSetup</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\CmdLineArgs.cpp">
+			<Filter>ps\GameSetup</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\Config.cpp">
+			<Filter>ps\GameSetup</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\GameSetup.cpp">
+			<Filter>ps\GameSetup</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\HWDetect.cpp">
+			<Filter>ps\GameSetup</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\Paths.cpp">
+			<Filter>ps\GameSetup</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\RelaxNG.cpp">
+			<Filter>ps\XML</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\Xeromyces.cpp">
+			<Filter>ps\XML</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\XeroXMB.cpp">
+			<Filter>ps\XML</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\XMLWriter.cpp">
+			<Filter>ps\XML</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\SoundManager.cpp">
+			<Filter>soundmanager</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\data\ogg.cpp">
+			<Filter>soundmanager\data</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\data\OggData.cpp">
+			<Filter>soundmanager\data</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\data\SoundData.cpp">
+			<Filter>soundmanager\data</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\items\CBufferItem.cpp">
+			<Filter>soundmanager\items</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\items\CSoundBase.cpp">
+			<Filter>soundmanager\items</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\items\CSoundItem.cpp">
+			<Filter>soundmanager\items</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\items\CStreamItem.cpp">
+			<Filter>soundmanager\items</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\scripting\JSInterface_Sound.cpp">
+			<Filter>soundmanager\scripting</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\soundmanager\scripting\SoundGroup.cpp">
+			<Filter>soundmanager\scripting</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\BoundingBoxAligned.cpp">
+			<Filter>maths</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\BoundingBoxOriented.cpp">
+			<Filter>maths</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Brush.cpp">
+			<Filter>maths</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Fixed.cpp">
+			<Filter>maths</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Matrix3D.cpp">
+			<Filter>maths</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\MD5.cpp">
+			<Filter>maths</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Noise.cpp">
+			<Filter>maths</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\NUSpline.cpp">
+			<Filter>maths</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Plane.cpp">
+			<Filter>maths</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Quaternion.cpp">
+			<Filter>maths</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Sqrt.cpp">
+			<Filter>maths</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\Vector3D.cpp">
+			<Filter>maths</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\engine\precompiled.cpp">
+			<Filter>pch\engine</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

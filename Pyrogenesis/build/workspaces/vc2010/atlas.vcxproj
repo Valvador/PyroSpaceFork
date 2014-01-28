@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{2D206555-6A5A-6541-A0F8-EFB8964F67F6}</ProjectGuid>
+		<RootNamespace>atlas</RootNamespace>
+		<Keyword>Win32Proj</Keyword>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>true</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\atlas_Release\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">atlas</TargetName>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\atlas_Debug\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">atlas_dbg</TargetName>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\atlas;..\..\..\source;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\source\spidermonkey\include-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>false</MinimalRebuild>
+			<StringPooling>true</StringPooling>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\atlas;..\..\..\source;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\source\spidermonkey\include-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	<Lib>
+		<OutputFile>$(OutDir)atlas.lib</OutputFile>
+	</Lib>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<ProgramDataBaseFileName>$(OutDir)atlas.pdb</ProgramDataBaseFileName>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\atlas;..\..\..\source;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\source\spidermonkey\include-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>true</MinimalRebuild>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<SmallerTypeCheck>true</SmallerTypeCheck>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\atlas;..\..\..\source;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\source\spidermonkey\include-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	<Lib>
+		<OutputFile>$(OutDir)atlas_dbg.lib</OutputFile>
+	</Lib>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<ProgramDataBaseFileName>$(OutDir)atlas_dbg.pdb</ProgramDataBaseFileName>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\ActorViewer.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\Brushes.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\CommandProc.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\DeltaArray.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\GameLoop.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\InputProcessor.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\MessagePasser.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\MessagePasserImpl.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\Messages.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\MessagesSetup.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\Shareable.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\SharedMemory.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\SharedTypes.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\SimState.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\View.h" />
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\Handlers\MessageHandler.h" />
+		<ClInclude Include="..\..\..\source\pch\atlas\precompiled.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\ActorViewer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Brushes.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\CommandProc.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\GameLoop.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\InputProcessor.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\MessagePasserImpl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Misc.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Register.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\SimState.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\View.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\BrushHandlers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\CameraCtrlHandlers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\CinemaHandler.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\CommandHandlers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\ElevationHandlers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\EnvironmentHandlers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\GraphicsSetupHandlers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\MapHandlers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\MessageHandler.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\MiscHandlers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\ObjectHandlers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\PlayerHandlers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\TerrainHandlers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\TriggerHandler.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\atlas\precompiled.cpp">
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+		</ClCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>

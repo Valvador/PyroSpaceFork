@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="network">
+			<UniqueIdentifier>{7BCE6578-B32C-E641-86A5-C816309ADBAB}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch">
+			<UniqueIdentifier>{5650C81B-2EC5-B742-B5B5-2C68F32B9601}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch\network">
+			<UniqueIdentifier>{3B295720-FB32-3B46-9D6D-254FDDFC2D44}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\network\fsm.h">
+			<Filter>network</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\network\NetClient.h">
+			<Filter>network</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\network\NetFileTransfer.h">
+			<Filter>network</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\network\NetHost.h">
+			<Filter>network</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\network\NetMessage.h">
+			<Filter>network</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\network\NetMessages.h">
+			<Filter>network</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\network\NetServer.h">
+			<Filter>network</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\network\NetSession.h">
+			<Filter>network</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\network\NetStats.h">
+			<Filter>network</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\network\NetTurnManager.h">
+			<Filter>network</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\network\NMTCreator.h">
+			<Filter>network</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\network\Serialization.h">
+			<Filter>network</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\network\StringConverters.h">
+			<Filter>network</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\pch\network\precompiled.h">
+			<Filter>pch\network</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\network\fsm.cpp">
+			<Filter>network</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetClient.cpp">
+			<Filter>network</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetFileTransfer.cpp">
+			<Filter>network</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetHost.cpp">
+			<Filter>network</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetMessage.cpp">
+			<Filter>network</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetMessageSim.cpp">
+			<Filter>network</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetServer.cpp">
+			<Filter>network</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetSession.cpp">
+			<Filter>network</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetStats.cpp">
+			<Filter>network</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\NetTurnManager.cpp">
+			<Filter>network</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\network\precompiled.cpp">
+			<Filter>pch\network</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="tools">
+			<UniqueIdentifier>{5719E1D1-CD7C-1045-B1DD-0520F1BE036A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas">
+			<UniqueIdentifier>{3F088F37-186D-3347-95D0-C444088EECD4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\GameInterface">
+			<UniqueIdentifier>{B8A9D0D7-E344-014F-B9D7-E5D13C516826}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\GameInterface\Handlers">
+			<UniqueIdentifier>{FA63B2D7-F8EB-6544-BD7A-01A047D49F27}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch">
+			<UniqueIdentifier>{99ECC73A-5332-9243-98CD-0C085A990F8B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch\atlas">
+			<UniqueIdentifier>{C58ECA1A-79F1-494D-A46C-8CB4ED0B185D}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\ActorViewer.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\Brushes.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\CommandProc.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\DeltaArray.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\GameLoop.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\InputProcessor.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\MessagePasser.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\MessagePasserImpl.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\Messages.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\MessagesSetup.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\Shareable.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\SharedMemory.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\SharedTypes.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\SimState.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\View.h">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\GameInterface\Handlers\MessageHandler.h">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\pch\atlas\precompiled.h">
+			<Filter>pch\atlas</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\ActorViewer.cpp">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Brushes.cpp">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\CommandProc.cpp">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\GameLoop.cpp">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\InputProcessor.cpp">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\MessagePasserImpl.cpp">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Misc.cpp">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Register.cpp">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\SimState.cpp">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\View.cpp">
+			<Filter>tools\atlas\GameInterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\BrushHandlers.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\CameraCtrlHandlers.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\CinemaHandler.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\CommandHandlers.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\ElevationHandlers.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\EnvironmentHandlers.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\GraphicsSetupHandlers.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\MapHandlers.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\MessageHandler.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\MiscHandlers.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\ObjectHandlers.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\PlayerHandlers.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\TerrainHandlers.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\GameInterface\Handlers\TriggerHandler.cpp">
+			<Filter>tools\atlas\GameInterface\Handlers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\atlas\precompiled.cpp">
+			<Filter>pch\atlas</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

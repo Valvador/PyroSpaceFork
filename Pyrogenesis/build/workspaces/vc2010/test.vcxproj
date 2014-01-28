@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{EBF97121-EDA6-5243-AE67-CE988306392F}</ProjectGuid>
+		<RootNamespace>test</RootNamespace>
+		<Keyword>Win32Proj</Keyword>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>true</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\test_Release\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">test</TargetName>
+		<LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\test_Debug\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">test_dbg</TargetName>
+		<LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\libraries\win32\wxwidgets\include\msvc;..\..\..\libraries\win32\wxwidgets\include;..\..\..\source\pch\test;..\..\..\source;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\libjpg\include;..\..\..\libraries\win32\libpng\include;..\..\..\libraries\win32\zlib\include;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\libxml2\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\cxxtest\include;..\..\..\libraries\source\enet\include;..\..\..\libraries\win32\libcurl\include;..\..\..\libraries\source\valgrind\include;..\..\..\libraries\win32\openal\include;..\..\..\libraries\win32\vorbis\include;..\..\..\libraries\source\nvtt\include;..\..\..\libraries\win32\gloox\include;..\..\..\libraries\source\miniupnpc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;NVTT_SHARED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>false</MinimalRebuild>
+			<StringPooling>true</StringPooling>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;NVTT_SHARED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\libraries\win32\wxwidgets\include\msvc;..\..\..\libraries\win32\wxwidgets\include;..\..\..\source\pch\test;..\..\..\source;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\libjpg\include;..\..\..\libraries\win32\libpng\include;..\..\..\libraries\win32\zlib\include;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\libxml2\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\cxxtest\include;..\..\..\libraries\source\enet\include;..\..\..\libraries\win32\libcurl\include;..\..\..\libraries\source\valgrind\include;..\..\..\libraries\win32\openal\include;..\..\..\libraries\win32\vorbis\include;..\..\..\libraries\source\nvtt\include;..\..\..\libraries\win32\gloox\include;..\..\..\libraries\source\miniupnpc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+		<Link>
+			<AdditionalDependencies>..\..\..\binaries\system\network.lib;..\..\..\binaries\system\lobby.lib;..\..\..\binaries\system\simulation2.lib;..\..\..\binaries\system\scriptinterface.lib;..\..\..\binaries\system\engine.lib;..\..\..\binaries\system\graphics.lib;..\..\..\binaries\system\atlas.lib;..\..\..\binaries\system\gui.lib;..\..\..\binaries\system\lowlevel.lib;..\..\..\binaries\system\mongoose.lib;glooxwrapper.lib;..\..\..\binaries\system\mocks_test.lib;..\..\..\binaries\system\AtlasObject.lib;wxmsw28u_gl.lib;opengl32.lib;gdi32.lib;jpeg-6b.lib;libpng15.lib;zlib1.lib;mozjs185-ps-release.lib;libxml2.lib;comsuppw.lib;enet.lib;libcurl.lib;openal32.lib;vorbisfile.lib;nvtt.lib;gloox-1.0.lib;miniupnpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)test.exe</OutputFile>
+			<AdditionalLibraryDirectories>..\..\..\binaries\system;..\..\..\libraries\win32\wxwidgets\lib\vc_lib;..\..\..\libraries\win32\opengl\lib;..\..\..\libraries\win32\sdl\lib;..\..\..\libraries\win32\libjpg\lib;..\..\..\libraries\win32\libpng\lib;..\..\..\libraries\win32\zlib\lib;..\..\..\libraries\source\spidermonkey\lib;..\..\..\libraries\win32\libxml2\lib;..\..\..\libraries\win32\boost\lib;..\..\..\libraries\source\cxxtest\lib;..\..\..\libraries\source\enet\lib;..\..\..\libraries\win32\libcurl\lib;..\..\..\libraries\source\valgrind\lib;..\..\..\libraries\win32\openal\lib;..\..\..\libraries\win32\vorbis\lib;..\..\..\libraries\source\nvtt\lib;..\..\..\libraries\win32\gloox\lib;..\..\..\libraries\source\miniupnpc\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<ProgramDataBaseFileName>$(OutDir)test.pdb</ProgramDataBaseFileName>
+			<EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+			<TargetMachine>MachineX86</TargetMachine>
+			<AdditionalOptions>/DELAYLOAD:jpeg-6b.dll /DELAYLOAD:libpng15.dll /DELAYLOAD:zlib1.dll /DELAYLOAD:enet.dll /DELAYLOAD:libcurl.dll /DELAYLOAD:vorbisfile.dll /DELAYLOAD:nvtt.dll /DELAYLOAD:gloox-1.0.dll /DELAYLOAD:miniupnpc.dll /INCLUDE:_wstartup_InitAndRegisterShutdown /SUBSYSTEM:CONSOLE &quot;/manifestdependency:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; processorArchitecture=&apos;X86&apos; publicKeyToken=&apos;6595b64144ccf1df&apos;&quot; &quot;/manifestdependency:type=&apos;win32&apos; name=&apos;Microsoft.VC80.CRT&apos; version=&apos;8.0.50727.4053&apos; processorArchitecture=&apos;x86&apos; publicKeyToken=&apos;1fc8b3b9a1e18e3b&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+		</Link>
+		<PreBuildEvent>
+			<Command></Command>
+			<Command>..\..\bin\cxxtestgen.exe --root --have-std --gui=PsTestWrapper --runner=Win32ODSPrinter --include=precompiled.h &gt; ..\..\..\source\test_root.cpp</Command>
+		</PreBuildEvent>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\libraries\win32\wxwidgets\include\msvc;..\..\..\libraries\win32\wxwidgets\include;..\..\..\source\pch\test;..\..\..\source;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\libjpg\include;..\..\..\libraries\win32\libpng\include;..\..\..\libraries\win32\zlib\include;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\libxml2\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\cxxtest\include;..\..\..\libraries\source\enet\include;..\..\..\libraries\win32\libcurl\include;..\..\..\libraries\source\valgrind\include;..\..\..\libraries\win32\openal\include;..\..\..\libraries\win32\vorbis\include;..\..\..\libraries\source\nvtt\include;..\..\..\libraries\win32\gloox\include;..\..\..\libraries\source\miniupnpc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;NVTT_SHARED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>true</MinimalRebuild>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<SmallerTypeCheck>true</SmallerTypeCheck>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;NVTT_SHARED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\libraries\win32\wxwidgets\include\msvc;..\..\..\libraries\win32\wxwidgets\include;..\..\..\source\pch\test;..\..\..\source;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\libjpg\include;..\..\..\libraries\win32\libpng\include;..\..\..\libraries\win32\zlib\include;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\libxml2\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\cxxtest\include;..\..\..\libraries\source\enet\include;..\..\..\libraries\win32\libcurl\include;..\..\..\libraries\source\valgrind\include;..\..\..\libraries\win32\openal\include;..\..\..\libraries\win32\vorbis\include;..\..\..\libraries\source\nvtt\include;..\..\..\libraries\win32\gloox\include;..\..\..\libraries\source\miniupnpc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+		<Link>
+			<AdditionalDependencies>..\..\..\binaries\system\network_dbg.lib;..\..\..\binaries\system\lobby_dbg.lib;..\..\..\binaries\system\simulation2_dbg.lib;..\..\..\binaries\system\scriptinterface_dbg.lib;..\..\..\binaries\system\engine_dbg.lib;..\..\..\binaries\system\graphics_dbg.lib;..\..\..\binaries\system\atlas_dbg.lib;..\..\..\binaries\system\gui_dbg.lib;..\..\..\binaries\system\lowlevel_dbg.lib;..\..\..\binaries\system\mongoose_dbg.lib;glooxwrapper_dbg.lib;..\..\..\binaries\system\mocks_test_dbg.lib;..\..\..\binaries\system\AtlasObject_dbg.lib;wxmsw28ud_gl.lib;opengl32.lib;gdi32.lib;jpeg-6bd.lib;libpng15d.lib;zlib1d.lib;mozjs185-ps-debug.lib;libxml2.lib;comsuppwd.lib;enetd.lib;libcurld.lib;openal32.lib;vorbisfile_d.lib;nvtt.lib;gloox-1.0d.lib;miniupnpcd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)test_dbg.exe</OutputFile>
+			<AdditionalLibraryDirectories>..\..\..\binaries\system;..\..\..\libraries\win32\wxwidgets\lib\vc_lib;..\..\..\libraries\win32\opengl\lib;..\..\..\libraries\win32\sdl\lib;..\..\..\libraries\win32\libjpg\lib;..\..\..\libraries\win32\libpng\lib;..\..\..\libraries\win32\zlib\lib;..\..\..\libraries\source\spidermonkey\lib;..\..\..\libraries\win32\libxml2\lib;..\..\..\libraries\win32\boost\lib;..\..\..\libraries\source\cxxtest\lib;..\..\..\libraries\source\enet\lib;..\..\..\libraries\win32\libcurl\lib;..\..\..\libraries\source\valgrind\lib;..\..\..\libraries\win32\openal\lib;..\..\..\libraries\win32\vorbis\lib;..\..\..\libraries\source\nvtt\lib;..\..\..\libraries\win32\gloox\lib;..\..\..\libraries\source\miniupnpc\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<ProgramDataBaseFileName>$(OutDir)test_dbg.pdb</ProgramDataBaseFileName>
+			<EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+			<TargetMachine>MachineX86</TargetMachine>
+			<AdditionalOptions>/DELAYLOAD:jpeg-6bd.dll /DELAYLOAD:libpng15d.dll /DELAYLOAD:zlib1d.dll /DELAYLOAD:enetd.dll /DELAYLOAD:libcurld.dll /DELAYLOAD:vorbisfile_d.dll /DELAYLOAD:nvtt.dll /DELAYLOAD:gloox-1.0d.dll /DELAYLOAD:miniupnpcd.dll /INCLUDE:_wstartup_InitAndRegisterShutdown /SUBSYSTEM:CONSOLE &quot;/manifestdependency:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; processorArchitecture=&apos;X86&apos; publicKeyToken=&apos;6595b64144ccf1df&apos;&quot; &quot;/manifestdependency:type=&apos;win32&apos; name=&apos;Microsoft.VC80.DebugCRT&apos; version=&apos;8.0.50727.4053&apos; processorArchitecture=&apos;x86&apos; publicKeyToken=&apos;1fc8b3b9a1e18e3b&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+		</Link>
+		<PreBuildEvent>
+			<Command></Command>
+			<Command>..\..\bin\cxxtestgen.exe --root --have-std --gui=PsTestWrapper --runner=Win32ODSPrinter --include=precompiled.h &gt; ..\..\..\source\test_root.cpp</Command>
+		</PreBuildEvent>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_Color.h">
+			<Message>Generating test_Color.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\graphics\tests\test_Color.cpp" "..\..\..\source\graphics\tests\test_Color.h"</Command>
+			<Outputs>..\..\..\source\graphics\tests\test_Color.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_LOSTexture.h">
+			<Message>Generating test_LOSTexture.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\graphics\tests\test_LOSTexture.cpp" "..\..\..\source\graphics\tests\test_LOSTexture.h"</Command>
+			<Outputs>..\..\..\source\graphics\tests\test_LOSTexture.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_MeshManager.h">
+			<Message>Generating test_MeshManager.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\graphics\tests\test_MeshManager.cpp" "..\..\..\source\graphics\tests\test_MeshManager.h"</Command>
+			<Outputs>..\..\..\source\graphics\tests\test_MeshManager.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_ShaderManager.h">
+			<Message>Generating test_ShaderManager.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\graphics\tests\test_ShaderManager.cpp" "..\..\..\source\graphics\tests\test_ShaderManager.h"</Command>
+			<Outputs>..\..\..\source\graphics\tests\test_ShaderManager.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_Terrain.h">
+			<Message>Generating test_Terrain.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\graphics\tests\test_Terrain.cpp" "..\..\..\source\graphics\tests\test_Terrain.h"</Command>
+			<Outputs>..\..\..\source\graphics\tests\test_Terrain.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_TextureConverter.h">
+			<Message>Generating test_TextureConverter.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\graphics\tests\test_TextureConverter.cpp" "..\..\..\source\graphics\tests\test_TextureConverter.h"</Command>
+			<Outputs>..\..\..\source\graphics\tests\test_TextureConverter.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_TextureManager.h">
+			<Message>Generating test_TextureManager.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\graphics\tests\test_TextureManager.cpp" "..\..\..\source\graphics\tests\test_TextureManager.h"</Command>
+			<Outputs>..\..\..\source\graphics\tests\test_TextureManager.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\gui\tests\test_ParseString.h">
+			<Message>Generating test_ParseString.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\gui\tests\test_ParseString.cpp" "..\..\..\source\gui\tests\test_ParseString.h"</Command>
+			<Outputs>..\..\..\source\gui\tests\test_ParseString.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\allocators\tests\test_allocators.h">
+			<Message>Generating test_allocators.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\allocators\tests\test_allocators.cpp" "..\..\..\source\lib\allocators\tests\test_allocators.h"</Command>
+			<Outputs>..\..\..\source\lib\allocators\tests\test_allocators.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\allocators\tests\test_headerless.h">
+			<Message>Generating test_headerless.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\allocators\tests\test_headerless.cpp" "..\..\..\source\lib\allocators\tests\test_headerless.h"</Command>
+			<Outputs>..\..\..\source\lib\allocators\tests\test_headerless.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\file\common\tests\test_trace.h">
+			<Message>Generating test_trace.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\file\common\tests\test_trace.cpp" "..\..\..\source\lib\file\common\tests\test_trace.h"</Command>
+			<Outputs>..\..\..\source\lib\file\common\tests\test_trace.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\file\vfs\tests\test_vfs_tree.h">
+			<Message>Generating test_vfs_tree.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\file\vfs\tests\test_vfs_tree.cpp" "..\..\..\source\lib\file\vfs\tests\test_vfs_tree.h"</Command>
+			<Outputs>..\..\..\source\lib\file\vfs\tests\test_vfs_tree.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\posix\tests\test_posix.h">
+			<Message>Generating test_posix.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\posix\tests\test_posix.cpp" "..\..\..\source\lib\posix\tests\test_posix.h"</Command>
+			<Outputs>..\..\..\source\lib\posix\tests\test_posix.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\res\graphics\tests\test_tex.h">
+			<Message>Generating test_tex.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\res\graphics\tests\test_tex.cpp" "..\..\..\source\lib\res\graphics\tests\test_tex.h"</Command>
+			<Outputs>..\..\..\source\lib\res\graphics\tests\test_tex.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\sysdep\os\win\tests\test_ia32.h">
+			<Message>Generating test_ia32.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\sysdep\os\win\tests\test_ia32.cpp" "..\..\..\source\lib\sysdep\os\win\tests\test_ia32.h"</Command>
+			<Outputs>..\..\..\source\lib\sysdep\os\win\tests\test_ia32.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\sysdep\os\win\tests\test_wdbg_sym.h">
+			<Message>Generating test_wdbg_sym.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\sysdep\os\win\tests\test_wdbg_sym.cpp" "..\..\..\source\lib\sysdep\os\win\tests\test_wdbg_sym.h"</Command>
+			<Outputs>..\..\..\source\lib\sysdep\os\win\tests\test_wdbg_sym.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\sysdep\tests\test_printf.h">
+			<Message>Generating test_printf.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\sysdep\tests\test_printf.cpp" "..\..\..\source\lib\sysdep\tests\test_printf.h"</Command>
+			<Outputs>..\..\..\source\lib\sysdep\tests\test_printf.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\sysdep\tests\test_rtl.h">
+			<Message>Generating test_rtl.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\sysdep\tests\test_rtl.cpp" "..\..\..\source\lib\sysdep\tests\test_rtl.h"</Command>
+			<Outputs>..\..\..\source\lib\sysdep\tests\test_rtl.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\sysdep\tests\test_sysdep.h">
+			<Message>Generating test_sysdep.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\sysdep\tests\test_sysdep.cpp" "..\..\..\source\lib\sysdep\tests\test_sysdep.h"</Command>
+			<Outputs>..\..\..\source\lib\sysdep\tests\test_sysdep.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_adts.h">
+			<Message>Generating test_adts.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\tests\test_adts.cpp" "..\..\..\source\lib\tests\test_adts.h"</Command>
+			<Outputs>..\..\..\source\lib\tests\test_adts.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_base32.h">
+			<Message>Generating test_base32.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\tests\test_base32.cpp" "..\..\..\source\lib\tests\test_base32.h"</Command>
+			<Outputs>..\..\..\source\lib\tests\test_base32.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_bits.h">
+			<Message>Generating test_bits.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\tests\test_bits.cpp" "..\..\..\source\lib\tests\test_bits.h"</Command>
+			<Outputs>..\..\..\source\lib\tests\test_bits.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_byte_order.h">
+			<Message>Generating test_byte_order.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\tests\test_byte_order.cpp" "..\..\..\source\lib\tests\test_byte_order.h"</Command>
+			<Outputs>..\..\..\source\lib\tests\test_byte_order.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_cache_adt.h">
+			<Message>Generating test_cache_adt.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\tests\test_cache_adt.cpp" "..\..\..\source\lib\tests\test_cache_adt.h"</Command>
+			<Outputs>..\..\..\source\lib\tests\test_cache_adt.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_fnv_hash.h">
+			<Message>Generating test_fnv_hash.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\tests\test_fnv_hash.cpp" "..\..\..\source\lib\tests\test_fnv_hash.h"</Command>
+			<Outputs>..\..\..\source\lib\tests\test_fnv_hash.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_lib.h">
+			<Message>Generating test_lib.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\tests\test_lib.cpp" "..\..\..\source\lib\tests\test_lib.h"</Command>
+			<Outputs>..\..\..\source\lib\tests\test_lib.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_path.h">
+			<Message>Generating test_path.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\tests\test_path.cpp" "..\..\..\source\lib\tests\test_path.h"</Command>
+			<Outputs>..\..\..\source\lib\tests\test_path.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_path_util.h">
+			<Message>Generating test_path_util.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\tests\test_path_util.cpp" "..\..\..\source\lib\tests\test_path_util.h"</Command>
+			<Outputs>..\..\..\source\lib\tests\test_path_util.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_rand.h">
+			<Message>Generating test_rand.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\tests\test_rand.cpp" "..\..\..\source\lib\tests\test_rand.h"</Command>
+			<Outputs>..\..\..\source\lib\tests\test_rand.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_regex.h">
+			<Message>Generating test_regex.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\tests\test_regex.cpp" "..\..\..\source\lib\tests\test_regex.h"</Command>
+			<Outputs>..\..\..\source\lib\tests\test_regex.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_secure_crt.h">
+			<Message>Generating test_secure_crt.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\tests\test_secure_crt.cpp" "..\..\..\source\lib\tests\test_secure_crt.h"</Command>
+			<Outputs>..\..\..\source\lib\tests\test_secure_crt.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_wchar.h">
+			<Message>Generating test_wchar.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\lib\tests\test_wchar.cpp" "..\..\..\source\lib\tests\test_wchar.h"</Command>
+			<Outputs>..\..\..\source\lib\tests\test_wchar.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_Bound.h">
+			<Message>Generating test_Bound.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\maths\tests\test_Bound.cpp" "..\..\..\source\maths\tests\test_Bound.h"</Command>
+			<Outputs>..\..\..\source\maths\tests\test_Bound.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_Brush.h">
+			<Message>Generating test_Brush.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\maths\tests\test_Brush.cpp" "..\..\..\source\maths\tests\test_Brush.h"</Command>
+			<Outputs>..\..\..\source\maths\tests\test_Brush.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_Fixed.h">
+			<Message>Generating test_Fixed.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\maths\tests\test_Fixed.cpp" "..\..\..\source\maths\tests\test_Fixed.h"</Command>
+			<Outputs>..\..\..\source\maths\tests\test_Fixed.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_FixedVector2D.h">
+			<Message>Generating test_FixedVector2D.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\maths\tests\test_FixedVector2D.cpp" "..\..\..\source\maths\tests\test_FixedVector2D.h"</Command>
+			<Outputs>..\..\..\source\maths\tests\test_FixedVector2D.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_FixedVector3D.h">
+			<Message>Generating test_FixedVector3D.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\maths\tests\test_FixedVector3D.cpp" "..\..\..\source\maths\tests\test_FixedVector3D.h"</Command>
+			<Outputs>..\..\..\source\maths\tests\test_FixedVector3D.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_Matrix3d.h">
+			<Message>Generating test_Matrix3d.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\maths\tests\test_Matrix3d.cpp" "..\..\..\source\maths\tests\test_Matrix3d.h"</Command>
+			<Outputs>..\..\..\source\maths\tests\test_Matrix3d.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_MD5.h">
+			<Message>Generating test_MD5.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\maths\tests\test_MD5.cpp" "..\..\..\source\maths\tests\test_MD5.h"</Command>
+			<Outputs>..\..\..\source\maths\tests\test_MD5.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_Random.h">
+			<Message>Generating test_Random.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\maths\tests\test_Random.cpp" "..\..\..\source\maths\tests\test_Random.h"</Command>
+			<Outputs>..\..\..\source\maths\tests\test_Random.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_Sqrt.h">
+			<Message>Generating test_Sqrt.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\maths\tests\test_Sqrt.cpp" "..\..\..\source\maths\tests\test_Sqrt.h"</Command>
+			<Outputs>..\..\..\source\maths\tests\test_Sqrt.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\network\tests\test_Net.h">
+			<Message>Generating test_Net.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\network\tests\test_Net.cpp" "..\..\..\source\network\tests\test_Net.h"</Command>
+			<Outputs>..\..\..\source\network\tests\test_Net.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\network\tests\test_NetMessage.h">
+			<Message>Generating test_NetMessage.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\network\tests\test_NetMessage.cpp" "..\..\..\source\network\tests\test_NetMessage.h"</Command>
+			<Outputs>..\..\..\source\network\tests\test_NetMessage.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\GameSetup\tests\test_CmdLineArgs.h">
+			<Message>Generating test_CmdLineArgs.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\ps\GameSetup\tests\test_CmdLineArgs.cpp" "..\..\..\source\ps\GameSetup\tests\test_CmdLineArgs.h"</Command>
+			<Outputs>..\..\..\source\ps\GameSetup\tests\test_CmdLineArgs.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\tests\stub_impl_hack.h">
+			<Message>Generating stub_impl_hack.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\ps\tests\stub_impl_hack.cpp" "..\..\..\source\ps\tests\stub_impl_hack.h"</Command>
+			<Outputs>..\..\..\source\ps\tests\stub_impl_hack.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\tests\test_CLogger.h">
+			<Message>Generating test_CLogger.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\ps\tests\test_CLogger.cpp" "..\..\..\source\ps\tests\test_CLogger.h"</Command>
+			<Outputs>..\..\..\source\ps\tests\test_CLogger.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\tests\test_CStr.h">
+			<Message>Generating test_CStr.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\ps\tests\test_CStr.cpp" "..\..\..\source\ps\tests\test_CStr.h"</Command>
+			<Outputs>..\..\..\source\ps\tests\test_CStr.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\tests\test_Parser.h">
+			<Message>Generating test_Parser.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\ps\tests\test_Parser.cpp" "..\..\..\source\ps\tests\test_Parser.h"</Command>
+			<Outputs>..\..\..\source\ps\tests\test_Parser.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\tests\test_test.h">
+			<Message>Generating test_test.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\ps\tests\test_test.cpp" "..\..\..\source\ps\tests\test_test.h"</Command>
+			<Outputs>..\..\..\source\ps\tests\test_test.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\XML\tests\test_RelaxNG.h">
+			<Message>Generating test_RelaxNG.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\ps\XML\tests\test_RelaxNG.cpp" "..\..\..\source\ps\XML\tests\test_RelaxNG.h"</Command>
+			<Outputs>..\..\..\source\ps\XML\tests\test_RelaxNG.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\XML\tests\test_Xeromyces.h">
+			<Message>Generating test_Xeromyces.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\ps\XML\tests\test_Xeromyces.cpp" "..\..\..\source\ps\XML\tests\test_Xeromyces.h"</Command>
+			<Outputs>..\..\..\source\ps\XML\tests\test_Xeromyces.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\XML\tests\test_XeroXMB.h">
+			<Message>Generating test_XeroXMB.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\ps\XML\tests\test_XeroXMB.cpp" "..\..\..\source\ps\XML\tests\test_XeroXMB.h"</Command>
+			<Outputs>..\..\..\source\ps\XML\tests\test_XeroXMB.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\XML\tests\test_XMLWriter.h">
+			<Message>Generating test_XMLWriter.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\ps\XML\tests\test_XMLWriter.cpp" "..\..\..\source\ps\XML\tests\test_XMLWriter.h"</Command>
+			<Outputs>..\..\..\source\ps\XML\tests\test_XMLWriter.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\scriptinterface\tests\test_ScriptConversions.h">
+			<Message>Generating test_ScriptConversions.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\scriptinterface\tests\test_ScriptConversions.cpp" "..\..\..\source\scriptinterface\tests\test_ScriptConversions.h"</Command>
+			<Outputs>..\..\..\source\scriptinterface\tests\test_ScriptConversions.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\scriptinterface\tests\test_ScriptInterface.h">
+			<Message>Generating test_ScriptInterface.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\scriptinterface\tests\test_ScriptInterface.cpp" "..\..\..\source\scriptinterface\tests\test_ScriptInterface.h"</Command>
+			<Outputs>..\..\..\source\scriptinterface\tests\test_ScriptInterface.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\scriptinterface\tests\test_ScriptVal.h">
+			<Message>Generating test_ScriptVal.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\scriptinterface\tests\test_ScriptVal.cpp" "..\..\..\source\scriptinterface\tests\test_ScriptVal.h"</Command>
+			<Outputs>..\..\..\source\scriptinterface\tests\test_ScriptVal.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_CommandQueue.h">
+			<Message>Generating test_CommandQueue.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\simulation2\components\tests\test_CommandQueue.cpp" "..\..\..\source\simulation2\components\tests\test_CommandQueue.h"</Command>
+			<Outputs>..\..\..\source\simulation2\components\tests\test_CommandQueue.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_ObstructionManager.h">
+			<Message>Generating test_ObstructionManager.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\simulation2\components\tests\test_ObstructionManager.cpp" "..\..\..\source\simulation2\components\tests\test_ObstructionManager.h"</Command>
+			<Outputs>..\..\..\source\simulation2\components\tests\test_ObstructionManager.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_Pathfinder.h">
+			<Message>Generating test_Pathfinder.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\simulation2\components\tests\test_Pathfinder.cpp" "..\..\..\source\simulation2\components\tests\test_Pathfinder.h"</Command>
+			<Outputs>..\..\..\source\simulation2\components\tests\test_Pathfinder.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_Position.h">
+			<Message>Generating test_Position.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\simulation2\components\tests\test_Position.cpp" "..\..\..\source\simulation2\components\tests\test_Position.h"</Command>
+			<Outputs>..\..\..\source\simulation2\components\tests\test_Position.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_RangeManager.h">
+			<Message>Generating test_RangeManager.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\simulation2\components\tests\test_RangeManager.cpp" "..\..\..\source\simulation2\components\tests\test_RangeManager.h"</Command>
+			<Outputs>..\..\..\source\simulation2\components\tests\test_RangeManager.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_scripts.h">
+			<Message>Generating test_scripts.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\simulation2\components\tests\test_scripts.cpp" "..\..\..\source\simulation2\components\tests\test_scripts.h"</Command>
+			<Outputs>..\..\..\source\simulation2\components\tests\test_scripts.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_TerritoryManager.h">
+			<Message>Generating test_TerritoryManager.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\simulation2\components\tests\test_TerritoryManager.cpp" "..\..\..\source\simulation2\components\tests\test_TerritoryManager.h"</Command>
+			<Outputs>..\..\..\source\simulation2\components\tests\test_TerritoryManager.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\tests\test_CmpTemplateManager.h">
+			<Message>Generating test_CmpTemplateManager.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\simulation2\tests\test_CmpTemplateManager.cpp" "..\..\..\source\simulation2\tests\test_CmpTemplateManager.h"</Command>
+			<Outputs>..\..\..\source\simulation2\tests\test_CmpTemplateManager.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\tests\test_ComponentManager.h">
+			<Message>Generating test_ComponentManager.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\simulation2\tests\test_ComponentManager.cpp" "..\..\..\source\simulation2\tests\test_ComponentManager.h"</Command>
+			<Outputs>..\..\..\source\simulation2\tests\test_ComponentManager.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\tests\test_ParamNode.h">
+			<Message>Generating test_ParamNode.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\simulation2\tests\test_ParamNode.cpp" "..\..\..\source\simulation2\tests\test_ParamNode.h"</Command>
+			<Outputs>..\..\..\source\simulation2\tests\test_ParamNode.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\tests\test_Serializer.h">
+			<Message>Generating test_Serializer.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\simulation2\tests\test_Serializer.cpp" "..\..\..\source\simulation2\tests\test_Serializer.h"</Command>
+			<Outputs>..\..\..\source\simulation2\tests\test_Serializer.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\tests\test_Simulation2.h">
+			<Message>Generating test_Simulation2.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\simulation2\tests\test_Simulation2.cpp" "..\..\..\source\simulation2\tests\test_Simulation2.h"</Command>
+			<Outputs>..\..\..\source\simulation2\tests\test_Simulation2.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\tools\atlas\AtlasObject\tests\test_AtlasObjectXML.h">
+			<Message>Generating test_AtlasObjectXML.cpp</Message>
+			<Command>..\..\bin\cxxtestgen.exe --part --have-std --include=precompiled.h -o "..\..\..\source\tools\atlas\AtlasObject\tests\test_AtlasObjectXML.cpp" "..\..\..\source\tools\atlas\AtlasObject\tests\test_AtlasObjectXML.h"</Command>
+			<Outputs>..\..\..\source\tools\atlas\AtlasObject\tests\test_AtlasObjectXML.cpp;%(Outputs)</Outputs>
+		</CustomBuild>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\pch\test\precompiled.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\test_root.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\tests\test_Color.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\tests\test_LOSTexture.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\tests\test_MeshManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\tests\test_ShaderManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\tests\test_Terrain.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\tests\test_TextureConverter.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\tests\test_TextureManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\tests\test_ParseString.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\tests\test_allocators.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\tests\test_headerless.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\common\tests\test_trace.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\tests\test_vfs_tree.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\posix\tests\test_posix.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\res\graphics\tests\test_tex.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\tests\test_ia32.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\tests\test_wdbg_sym.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\tests\test_printf.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\tests\test_rtl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\tests\test_sysdep.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_adts.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_base32.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_bits.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_byte_order.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_cache_adt.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_fnv_hash.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_lib.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_path.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_path_util.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_rand.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_regex.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_secure_crt.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_wchar.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_Bound.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_Brush.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_Fixed.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_FixedVector2D.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_FixedVector3D.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_Matrix3d.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_MD5.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_Random.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_Sqrt.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\tests\test_Net.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\tests\test_NetMessage.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\tests\test_CmdLineArgs.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\tests\stub_impl_hack.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\tests\test_CLogger.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\tests\test_CStr.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\tests\test_Parser.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\tests\test_test.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\tests\test_RelaxNG.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\tests\test_Xeromyces.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\tests\test_XeroXMB.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\tests\test_XMLWriter.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\scriptinterface\tests\test_ScriptConversions.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\scriptinterface\tests\test_ScriptInterface.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\scriptinterface\tests\test_ScriptVal.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_CommandQueue.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_ObstructionManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_Pathfinder.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_Position.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_RangeManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_scripts.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_TerritoryManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\tests\test_CmpTemplateManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\tests\test_ComponentManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\tests\test_ParamNode.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\tests\test_Serializer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\tests\test_Simulation2.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasObject\tests\test_AtlasObjectXML.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\test\precompiled.cpp">
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\test_setup.cpp">
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="..\..\..\source\lib\sysdep\os\win\error_dialog.rc" />
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>

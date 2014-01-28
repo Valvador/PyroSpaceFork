@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="scriptinterface">
+			<UniqueIdentifier>{BD7A2604-C5ED-DD40-B9CE-EE251BE9D5B8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch">
+			<UniqueIdentifier>{6648CBC8-BE36-C940-AC14-9CBA6946ACA8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch\scriptinterface">
+			<UniqueIdentifier>{B1DECA36-397B-7641-B8E0-53D3CAFABD5E}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\scriptinterface\AutoRooters.h">
+			<Filter>scriptinterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\scriptinterface\DebuggingServer.h">
+			<Filter>scriptinterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\scriptinterface\NativeWrapperDecls.h">
+			<Filter>scriptinterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\scriptinterface\NativeWrapperDefns.h">
+			<Filter>scriptinterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\scriptinterface\ScriptExtraHeaders.h">
+			<Filter>scriptinterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\scriptinterface\ScriptInterface.h">
+			<Filter>scriptinterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\scriptinterface\ScriptStats.h">
+			<Filter>scriptinterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\scriptinterface\ScriptTypes.h">
+			<Filter>scriptinterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\scriptinterface\ScriptVal.h">
+			<Filter>scriptinterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\scriptinterface\ThreadDebugger.h">
+			<Filter>scriptinterface</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\pch\scriptinterface\precompiled.h">
+			<Filter>pch\scriptinterface</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\scriptinterface\AutoRooters.cpp">
+			<Filter>scriptinterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\scriptinterface\DebuggingServer.cpp">
+			<Filter>scriptinterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\scriptinterface\ScriptConversions.cpp">
+			<Filter>scriptinterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\scriptinterface\ScriptInterface.cpp">
+			<Filter>scriptinterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\scriptinterface\ScriptStats.cpp">
+			<Filter>scriptinterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\scriptinterface\ScriptVal.cpp">
+			<Filter>scriptinterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\scriptinterface\ThreadDebugger.cpp">
+			<Filter>scriptinterface</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\scriptinterface\precompiled.cpp">
+			<Filter>pch\scriptinterface</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

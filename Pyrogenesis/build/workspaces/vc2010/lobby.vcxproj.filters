@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="lobby">
+			<UniqueIdentifier>{9415AC3F-262C-274B-B319-A74FF0400748}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lobby\scripting">
+			<UniqueIdentifier>{C92D701F-C3F9-044F-87F4-FA405DCE1C39}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch">
+			<UniqueIdentifier>{57274DB9-DFE9-3E44-A3F4-BDC328C52944}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch\lobby">
+			<UniqueIdentifier>{E8E60FA1-E916-C345-A0EC-D3BB3D15A074}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\lobby\IXmppClient.h">
+			<Filter>lobby</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lobby\pkcs5_pbkdf2.h">
+			<Filter>lobby</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lobby\sha.h">
+			<Filter>lobby</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lobby\StanzaExtensions.h">
+			<Filter>lobby</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lobby\XmppClient.h">
+			<Filter>lobby</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lobby\scripting\JSInterface_Lobby.h">
+			<Filter>lobby\scripting</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\pch\lobby\precompiled.h">
+			<Filter>pch\lobby</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\lobby\Globals.cpp">
+			<Filter>lobby</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lobby\pkcs5_pbkdf2.cpp">
+			<Filter>lobby</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lobby\sha.cpp">
+			<Filter>lobby</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lobby\StanzaExtensions.cpp">
+			<Filter>lobby</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lobby\XmppClient.cpp">
+			<Filter>lobby</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lobby\scripting\JSInterface_Lobby.cpp">
+			<Filter>lobby\scripting</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\lobby\precompiled.cpp">
+			<Filter>pch\lobby</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

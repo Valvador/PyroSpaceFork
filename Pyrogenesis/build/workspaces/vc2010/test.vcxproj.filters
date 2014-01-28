@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="pch">
+			<UniqueIdentifier>{CC16FD9A-C162-0942-B28F-3CC031423109}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch\test">
+			<UniqueIdentifier>{548D7BCE-3FE3-8043-B828-8ADC91266619}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib">
+			<UniqueIdentifier>{0A1E9658-082F-5944-B27D-7CFE4DFE4CAF}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep">
+			<UniqueIdentifier>{159D0466-8C72-9947-821F-D3099906EE1C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\os">
+			<UniqueIdentifier>{8E2CFA7E-64F3-F943-A061-C91B030D1510}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\os\win">
+			<UniqueIdentifier>{44FFD91C-8BF6-F347-ACD1-E07974D0BA7D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="graphics">
+			<UniqueIdentifier>{30A2FB93-4390-9745-BFD5-85514E1B3D6F}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="graphics\tests">
+			<UniqueIdentifier>{69C90F81-62B4-2E43-A9A1-082F832E477A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="gui">
+			<UniqueIdentifier>{70A2DFE3-76FF-624F-A1CF-A399C0DF97D4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="gui\tests">
+			<UniqueIdentifier>{E490A369-3200-C748-83F0-23A33EF8C5FC}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\allocators">
+			<UniqueIdentifier>{9E2544A0-9B33-5843-BE3C-585A7E626F24}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\allocators\tests">
+			<UniqueIdentifier>{34408E11-E4E0-8549-8930-9BFDBFD0DE30}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\file">
+			<UniqueIdentifier>{F443ED61-E749-C742-A952-84472B13D14C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\file\common">
+			<UniqueIdentifier>{2D7AE099-4B22-724B-AB50-C7A628BDE6AA}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\file\common\tests">
+			<UniqueIdentifier>{3651998F-CF92-264D-9631-256E1114C21D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\file\vfs">
+			<UniqueIdentifier>{B488CA7A-1973-D846-A7A4-608CC23CC82E}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\file\vfs\tests">
+			<UniqueIdentifier>{E8B6975B-A91D-7A4F-8A16-BFBC5457A547}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\posix">
+			<UniqueIdentifier>{CF717B35-5A80-F64A-9491-4D92166FD2A5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\posix\tests">
+			<UniqueIdentifier>{CA1B4FF6-B536-2E4D-8E75-14FBA3434E12}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\res">
+			<UniqueIdentifier>{90B9C617-9122-6147-A0A0-FFE697AF8473}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\res\graphics">
+			<UniqueIdentifier>{4EBD9B7E-A739-B849-830E-1294C6B2511B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\res\graphics\tests">
+			<UniqueIdentifier>{C864A77B-8848-764A-9F80-EBA932C79B26}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\os\win\tests">
+			<UniqueIdentifier>{5A839950-896C-9F4B-A9EA-BFA572D7F0ED}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\tests">
+			<UniqueIdentifier>{06B2C78D-90E0-6048-BD28-8F4CF736767A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\tests">
+			<UniqueIdentifier>{9A0928C4-08D8-9249-96C6-C9E6D23C8C48}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="maths">
+			<UniqueIdentifier>{FC6EF23C-7B55-6247-BA85-F2C1CEF08A35}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="maths\tests">
+			<UniqueIdentifier>{7C35993F-DA98-6243-AEEF-C25332B25AFD}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="network">
+			<UniqueIdentifier>{CCC446B8-36BB-B84F-B073-36C118281F28}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="network\tests">
+			<UniqueIdentifier>{2B3CB435-4BC8-AF43-8FB1-E456E1C71883}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="ps">
+			<UniqueIdentifier>{D60AA21C-44C9-CD4A-B2E5-94A122DE8132}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="ps\GameSetup">
+			<UniqueIdentifier>{A3AA7D74-9EEC-7A4B-8785-5CCA53C0A051}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="ps\GameSetup\tests">
+			<UniqueIdentifier>{D66DBF4B-9448-ED49-9A2E-547D858EBBF4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="ps\tests">
+			<UniqueIdentifier>{1F561DE3-F211-AB4E-92E0-3941D320F6C3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="ps\XML">
+			<UniqueIdentifier>{1A950FA5-CA6C-4445-9A18-A35272AEA188}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="ps\XML\tests">
+			<UniqueIdentifier>{A82B573F-6708-1B40-9E32-4250A6D1EE48}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="scriptinterface">
+			<UniqueIdentifier>{ECB34C4F-C37D-2946-BFFA-40775AC2D874}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="scriptinterface\tests">
+			<UniqueIdentifier>{F7B638C3-7FFB-B84F-9255-878B7B539BEB}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="simulation2">
+			<UniqueIdentifier>{3C42047B-CEC1-0845-802C-354EAE8CF2E3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="simulation2\components">
+			<UniqueIdentifier>{4DC9E680-BE91-A34B-BFA5-B58227BCC1B9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="simulation2\components\tests">
+			<UniqueIdentifier>{F4D833B3-CD6D-4549-90DE-4570727BED81}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="simulation2\tests">
+			<UniqueIdentifier>{5C1082F3-9FC2-E844-8BCC-867131BE6CBE}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools">
+			<UniqueIdentifier>{DB79CFFC-BE43-DC48-8F94-20574DB8B979}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas">
+			<UniqueIdentifier>{CCD19F75-ABD8-3240-A4B1-BBAC866A811B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasObject">
+			<UniqueIdentifier>{1F8F182C-FF90-A04D-BCAB-27CB398F0C96}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasObject\tests">
+			<UniqueIdentifier>{2AC6A5CC-6B64-A644-AB4C-5FBB44269B00}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\pch\test\precompiled.h">
+			<Filter>pch\test</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\test_root.cpp" />
+		<ClCompile Include="..\..\..\source\graphics\tests\test_Color.cpp">
+			<Filter>graphics\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\tests\test_LOSTexture.cpp">
+			<Filter>graphics\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\tests\test_MeshManager.cpp">
+			<Filter>graphics\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\tests\test_ShaderManager.cpp">
+			<Filter>graphics\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\tests\test_Terrain.cpp">
+			<Filter>graphics\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\tests\test_TextureConverter.cpp">
+			<Filter>graphics\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\tests\test_TextureManager.cpp">
+			<Filter>graphics\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\tests\test_ParseString.cpp">
+			<Filter>gui\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\tests\test_allocators.cpp">
+			<Filter>lib\allocators\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\tests\test_headerless.cpp">
+			<Filter>lib\allocators\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\common\tests\test_trace.cpp">
+			<Filter>lib\file\common\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\tests\test_vfs_tree.cpp">
+			<Filter>lib\file\vfs\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\posix\tests\test_posix.cpp">
+			<Filter>lib\posix\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\res\graphics\tests\test_tex.cpp">
+			<Filter>lib\res\graphics\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\tests\test_ia32.cpp">
+			<Filter>lib\sysdep\os\win\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\tests\test_wdbg_sym.cpp">
+			<Filter>lib\sysdep\os\win\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\tests\test_printf.cpp">
+			<Filter>lib\sysdep\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\tests\test_rtl.cpp">
+			<Filter>lib\sysdep\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\tests\test_sysdep.cpp">
+			<Filter>lib\sysdep\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_adts.cpp">
+			<Filter>lib\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_base32.cpp">
+			<Filter>lib\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_bits.cpp">
+			<Filter>lib\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_byte_order.cpp">
+			<Filter>lib\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_cache_adt.cpp">
+			<Filter>lib\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_fnv_hash.cpp">
+			<Filter>lib\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_lib.cpp">
+			<Filter>lib\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_path.cpp">
+			<Filter>lib\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_path_util.cpp">
+			<Filter>lib\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_rand.cpp">
+			<Filter>lib\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_regex.cpp">
+			<Filter>lib\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_secure_crt.cpp">
+			<Filter>lib\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tests\test_wchar.cpp">
+			<Filter>lib\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_Bound.cpp">
+			<Filter>maths\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_Brush.cpp">
+			<Filter>maths\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_Fixed.cpp">
+			<Filter>maths\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_FixedVector2D.cpp">
+			<Filter>maths\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_FixedVector3D.cpp">
+			<Filter>maths\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_Matrix3d.cpp">
+			<Filter>maths\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_MD5.cpp">
+			<Filter>maths\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_Random.cpp">
+			<Filter>maths\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\maths\tests\test_Sqrt.cpp">
+			<Filter>maths\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\tests\test_Net.cpp">
+			<Filter>network\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\network\tests\test_NetMessage.cpp">
+			<Filter>network\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\GameSetup\tests\test_CmdLineArgs.cpp">
+			<Filter>ps\GameSetup\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\tests\stub_impl_hack.cpp">
+			<Filter>ps\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\tests\test_CLogger.cpp">
+			<Filter>ps\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\tests\test_CStr.cpp">
+			<Filter>ps\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\tests\test_Parser.cpp">
+			<Filter>ps\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\tests\test_test.cpp">
+			<Filter>ps\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\tests\test_RelaxNG.cpp">
+			<Filter>ps\XML\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\tests\test_Xeromyces.cpp">
+			<Filter>ps\XML\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\tests\test_XeroXMB.cpp">
+			<Filter>ps\XML\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\ps\XML\tests\test_XMLWriter.cpp">
+			<Filter>ps\XML\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\scriptinterface\tests\test_ScriptConversions.cpp">
+			<Filter>scriptinterface\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\scriptinterface\tests\test_ScriptInterface.cpp">
+			<Filter>scriptinterface\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\scriptinterface\tests\test_ScriptVal.cpp">
+			<Filter>scriptinterface\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_CommandQueue.cpp">
+			<Filter>simulation2\components\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_ObstructionManager.cpp">
+			<Filter>simulation2\components\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_Pathfinder.cpp">
+			<Filter>simulation2\components\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_Position.cpp">
+			<Filter>simulation2\components\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_RangeManager.cpp">
+			<Filter>simulation2\components\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_scripts.cpp">
+			<Filter>simulation2\components\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\components\tests\test_TerritoryManager.cpp">
+			<Filter>simulation2\components\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\tests\test_CmpTemplateManager.cpp">
+			<Filter>simulation2\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\tests\test_ComponentManager.cpp">
+			<Filter>simulation2\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\tests\test_ParamNode.cpp">
+			<Filter>simulation2\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\tests\test_Serializer.cpp">
+			<Filter>simulation2\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\simulation2\tests\test_Simulation2.cpp">
+			<Filter>simulation2\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasObject\tests\test_AtlasObjectXML.cpp">
+			<Filter>tools\atlas\AtlasObject\tests</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\test\precompiled.cpp">
+			<Filter>pch\test</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\test_setup.cpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_Color.h">
+			<Filter>graphics\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_LOSTexture.h">
+			<Filter>graphics\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_MeshManager.h">
+			<Filter>graphics\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_ShaderManager.h">
+			<Filter>graphics\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_Terrain.h">
+			<Filter>graphics\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_TextureConverter.h">
+			<Filter>graphics\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\graphics\tests\test_TextureManager.h">
+			<Filter>graphics\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\gui\tests\test_ParseString.h">
+			<Filter>gui\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\allocators\tests\test_allocators.h">
+			<Filter>lib\allocators\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\allocators\tests\test_headerless.h">
+			<Filter>lib\allocators\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\file\common\tests\test_trace.h">
+			<Filter>lib\file\common\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\file\vfs\tests\test_vfs_tree.h">
+			<Filter>lib\file\vfs\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\posix\tests\test_posix.h">
+			<Filter>lib\posix\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\res\graphics\tests\test_tex.h">
+			<Filter>lib\res\graphics\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\sysdep\os\win\tests\test_ia32.h">
+			<Filter>lib\sysdep\os\win\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\sysdep\os\win\tests\test_wdbg_sym.h">
+			<Filter>lib\sysdep\os\win\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\sysdep\tests\test_printf.h">
+			<Filter>lib\sysdep\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\sysdep\tests\test_rtl.h">
+			<Filter>lib\sysdep\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\sysdep\tests\test_sysdep.h">
+			<Filter>lib\sysdep\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_adts.h">
+			<Filter>lib\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_base32.h">
+			<Filter>lib\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_bits.h">
+			<Filter>lib\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_byte_order.h">
+			<Filter>lib\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_cache_adt.h">
+			<Filter>lib\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_fnv_hash.h">
+			<Filter>lib\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_lib.h">
+			<Filter>lib\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_path.h">
+			<Filter>lib\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_path_util.h">
+			<Filter>lib\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_rand.h">
+			<Filter>lib\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_regex.h">
+			<Filter>lib\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_secure_crt.h">
+			<Filter>lib\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\lib\tests\test_wchar.h">
+			<Filter>lib\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_Bound.h">
+			<Filter>maths\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_Brush.h">
+			<Filter>maths\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_Fixed.h">
+			<Filter>maths\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_FixedVector2D.h">
+			<Filter>maths\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_FixedVector3D.h">
+			<Filter>maths\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_Matrix3d.h">
+			<Filter>maths\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_MD5.h">
+			<Filter>maths\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_Random.h">
+			<Filter>maths\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\maths\tests\test_Sqrt.h">
+			<Filter>maths\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\network\tests\test_Net.h">
+			<Filter>network\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\network\tests\test_NetMessage.h">
+			<Filter>network\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\GameSetup\tests\test_CmdLineArgs.h">
+			<Filter>ps\GameSetup\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\tests\stub_impl_hack.h">
+			<Filter>ps\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\tests\test_CLogger.h">
+			<Filter>ps\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\tests\test_CStr.h">
+			<Filter>ps\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\tests\test_Parser.h">
+			<Filter>ps\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\tests\test_test.h">
+			<Filter>ps\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\XML\tests\test_RelaxNG.h">
+			<Filter>ps\XML\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\XML\tests\test_Xeromyces.h">
+			<Filter>ps\XML\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\XML\tests\test_XeroXMB.h">
+			<Filter>ps\XML\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\ps\XML\tests\test_XMLWriter.h">
+			<Filter>ps\XML\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\scriptinterface\tests\test_ScriptConversions.h">
+			<Filter>scriptinterface\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\scriptinterface\tests\test_ScriptInterface.h">
+			<Filter>scriptinterface\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\scriptinterface\tests\test_ScriptVal.h">
+			<Filter>scriptinterface\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_CommandQueue.h">
+			<Filter>simulation2\components\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_ObstructionManager.h">
+			<Filter>simulation2\components\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_Pathfinder.h">
+			<Filter>simulation2\components\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_Position.h">
+			<Filter>simulation2\components\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_RangeManager.h">
+			<Filter>simulation2\components\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_scripts.h">
+			<Filter>simulation2\components\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\components\tests\test_TerritoryManager.h">
+			<Filter>simulation2\components\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\tests\test_CmpTemplateManager.h">
+			<Filter>simulation2\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\tests\test_ComponentManager.h">
+			<Filter>simulation2\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\tests\test_ParamNode.h">
+			<Filter>simulation2\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\tests\test_Serializer.h">
+			<Filter>simulation2\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\simulation2\tests\test_Simulation2.h">
+			<Filter>simulation2\tests</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\..\source\tools\atlas\AtlasObject\tests\test_AtlasObjectXML.h">
+			<Filter>tools\atlas\AtlasObject\tests</Filter>
+		</CustomBuild>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="..\..\..\source\lib\sysdep\os\win\error_dialog.rc">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ResourceCompile>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{E290F018-2F28-FF4A-9256-60325EB5F761}</ProjectGuid>
+		<RootNamespace>gui</RootNamespace>
+		<Keyword>Win32Proj</Keyword>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>true</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\gui_Release\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gui</TargetName>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\gui_Debug\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gui_dbg</TargetName>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\gui;..\..\..\source;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\openal\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>false</MinimalRebuild>
+			<StringPooling>true</StringPooling>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\gui;..\..\..\source;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\openal\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	<Lib>
+		<OutputFile>$(OutDir)gui.lib</OutputFile>
+	</Lib>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<ProgramDataBaseFileName>$(OutDir)gui.pdb</ProgramDataBaseFileName>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\gui;..\..\..\source;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\openal\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>true</MinimalRebuild>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<SmallerTypeCheck>true</SmallerTypeCheck>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\gui;..\..\..\source;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\openal\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	<Lib>
+		<OutputFile>$(OutDir)gui_dbg.lib</OutputFile>
+	</Lib>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<ProgramDataBaseFileName>$(OutDir)gui_dbg.pdb</ProgramDataBaseFileName>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\gui\CButton.h" />
+		<ClInclude Include="..\..\..\source\gui\CCheckBox.h" />
+		<ClInclude Include="..\..\..\source\gui\CDropDown.h" />
+		<ClInclude Include="..\..\..\source\gui\CGUI.h" />
+		<ClInclude Include="..\..\..\source\gui\CGUIList.h" />
+		<ClInclude Include="..\..\..\source\gui\CGUIScrollBarVertical.h" />
+		<ClInclude Include="..\..\..\source\gui\CGUISprite.h" />
+		<ClInclude Include="..\..\..\source\gui\CImage.h" />
+		<ClInclude Include="..\..\..\source\gui\CInput.h" />
+		<ClInclude Include="..\..\..\source\gui\CList.h" />
+		<ClInclude Include="..\..\..\source\gui\COList.h" />
+		<ClInclude Include="..\..\..\source\gui\CProgressBar.h" />
+		<ClInclude Include="..\..\..\source\gui\CRadioButton.h" />
+		<ClInclude Include="..\..\..\source\gui\CText.h" />
+		<ClInclude Include="..\..\..\source\gui\CTooltip.h" />
+		<ClInclude Include="..\..\..\source\gui\GUI.h" />
+		<ClInclude Include="..\..\..\source\gui\GUIbase.h" />
+		<ClInclude Include="..\..\..\source\gui\GUIManager.h" />
+		<ClInclude Include="..\..\..\source\gui\GUIRenderer.h" />
+		<ClInclude Include="..\..\..\source\gui\GUItext.h" />
+		<ClInclude Include="..\..\..\source\gui\GUITooltip.h" />
+		<ClInclude Include="..\..\..\source\gui\GUItypes.h" />
+		<ClInclude Include="..\..\..\source\gui\GUIutil.h" />
+		<ClInclude Include="..\..\..\source\gui\IGUIButtonBehavior.h" />
+		<ClInclude Include="..\..\..\source\gui\IGUIObject.h" />
+		<ClInclude Include="..\..\..\source\gui\IGUIScrollBar.h" />
+		<ClInclude Include="..\..\..\source\gui\IGUIScrollBarOwner.h" />
+		<ClInclude Include="..\..\..\source\gui\IGUITextOwner.h" />
+		<ClInclude Include="..\..\..\source\gui\MiniMap.h" />
+		<ClInclude Include="..\..\..\source\gui\scripting\JSInterface_GUITypes.h" />
+		<ClInclude Include="..\..\..\source\gui\scripting\JSInterface_IGUIObject.h" />
+		<ClInclude Include="..\..\..\source\gui\scripting\ScriptFunctions.h" />
+		<ClInclude Include="..\..\..\source\pch\gui\precompiled.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\gui\CButton.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CCheckBox.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CDropDown.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CGUI.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CGUIScrollBarVertical.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CGUISprite.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CImage.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CInput.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CList.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\COList.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CProgressBar.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CRadioButton.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CText.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CTooltip.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\GUIbase.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\GUIManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\GUIRenderer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\GUItext.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\GUITooltip.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\GUIutil.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\IGUIButtonBehavior.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\IGUIObject.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\IGUIScrollBar.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\IGUIScrollBarOwner.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\IGUITextOwner.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\MiniMap.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\scripting\GuiScriptConversions.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\scripting\JSInterface_GUITypes.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\scripting\JSInterface_IGUIObject.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\scripting\ScriptFunctions.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\gui\precompiled.cpp">
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+		</ClCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>

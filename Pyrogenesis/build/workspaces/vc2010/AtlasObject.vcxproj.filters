@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="tools">
+			<UniqueIdentifier>{B83F46C8-1E1C-4143-B6A8-8DDFC7CB9995}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas">
+			<UniqueIdentifier>{5851306D-E808-AD49-9C88-61F3805D7287}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasObject">
+			<UniqueIdentifier>{A877D322-22BD-914A-8D9D-045AB8290753}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasObject\AtlasObject.h">
+			<Filter>tools\atlas\AtlasObject</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasObject\AtlasObjectImpl.h">
+			<Filter>tools\atlas\AtlasObject</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasObject\AtlasObjectText.h">
+			<Filter>tools\atlas\AtlasObject</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasObject\AtlasObjectImpl.cpp">
+			<Filter>tools\atlas\AtlasObject</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasObject\AtlasObjectJS.cpp">
+			<Filter>tools\atlas\AtlasObject</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasObject\AtlasObjectText.cpp">
+			<Filter>tools\atlas\AtlasObject</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasObject\AtlasObjectXML.cpp">
+			<Filter>tools\atlas\AtlasObject</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

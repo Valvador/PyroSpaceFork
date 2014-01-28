@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{EC5AC9C2-1702-9142-88B1-4C1DA340515F}</ProjectGuid>
+		<RootNamespace>lowlevel</RootNamespace>
+		<Keyword>Win32Proj</Keyword>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>true</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\lowlevel_Release\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">lowlevel</TargetName>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\lowlevel_Debug\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">lowlevel_dbg</TargetName>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\lowlevel;..\..\..\source;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\libpng\include;..\..\..\libraries\win32\zlib\include;..\..\..\libraries\win32\libjpg\include;..\..\..\libraries\source\valgrind\include;..\..\..\libraries\source\cxxtest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>false</MinimalRebuild>
+			<StringPooling>true</StringPooling>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\lowlevel;..\..\..\source;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\libpng\include;..\..\..\libraries\win32\zlib\include;..\..\..\libraries\win32\libjpg\include;..\..\..\libraries\source\valgrind\include;..\..\..\libraries\source\cxxtest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	<Lib>
+		<OutputFile>$(OutDir)lowlevel.lib</OutputFile>
+	</Lib>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<ProgramDataBaseFileName>$(OutDir)lowlevel.pdb</ProgramDataBaseFileName>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\lowlevel;..\..\..\source;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\libpng\include;..\..\..\libraries\win32\zlib\include;..\..\..\libraries\win32\libjpg\include;..\..\..\libraries\source\valgrind\include;..\..\..\libraries\source\cxxtest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>true</MinimalRebuild>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<SmallerTypeCheck>true</SmallerTypeCheck>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\lowlevel;..\..\..\source;..\..\..\libraries\win32\boost\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\libpng\include;..\..\..\libraries\win32\zlib\include;..\..\..\libraries\win32\libjpg\include;..\..\..\libraries\source\valgrind\include;..\..\..\libraries\source\cxxtest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	<Lib>
+		<OutputFile>$(OutDir)lowlevel_dbg.lib</OutputFile>
+	</Lib>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<ProgramDataBaseFileName>$(OutDir)lowlevel_dbg.pdb</ProgramDataBaseFileName>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\lib\alignment.h" />
+		<ClInclude Include="..\..\..\source\lib\app_hooks.h" />
+		<ClInclude Include="..\..\..\source\lib\base32.h" />
+		<ClInclude Include="..\..\..\source\lib\bits.h" />
+		<ClInclude Include="..\..\..\source\lib\byte_order.h" />
+		<ClInclude Include="..\..\..\source\lib\code_annotation.h" />
+		<ClInclude Include="..\..\..\source\lib\code_generation.h" />
+		<ClInclude Include="..\..\..\source\lib\config.h" />
+		<ClInclude Include="..\..\..\source\lib\config2.h" />
+		<ClInclude Include="..\..\..\source\lib\debug.h" />
+		<ClInclude Include="..\..\..\source\lib\debug_stl.h" />
+		<ClInclude Include="..\..\..\source\lib\fnv_hash.h" />
+		<ClInclude Include="..\..\..\source\lib\frequency_filter.h" />
+		<ClInclude Include="..\..\..\source\lib\input.h" />
+		<ClInclude Include="..\..\..\source\lib\lib.h" />
+		<ClInclude Include="..\..\..\source\lib\lib_api.h" />
+		<ClInclude Include="..\..\..\source\lib\module_init.h" />
+		<ClInclude Include="..\..\..\source\lib\ogl.h" />
+		<ClInclude Include="..\..\..\source\lib\os_path.h" />
+		<ClInclude Include="..\..\..\source\lib\path.h" />
+		<ClInclude Include="..\..\..\source\lib\pointer_typedefs.h" />
+		<ClInclude Include="..\..\..\source\lib\precompiled.h" />
+		<ClInclude Include="..\..\..\source\lib\ps_stl.h" />
+		<ClInclude Include="..\..\..\source\lib\rand.h" />
+		<ClInclude Include="..\..\..\source\lib\regex.h" />
+		<ClInclude Include="..\..\..\source\lib\secure_crt.h" />
+		<ClInclude Include="..\..\..\source\lib\self_test.h" />
+		<ClInclude Include="..\..\..\source\lib\status.h" />
+		<ClInclude Include="..\..\..\source\lib\svn_revision.h" />
+		<ClInclude Include="..\..\..\source\lib\timer.h" />
+		<ClInclude Include="..\..\..\source\lib\types.h" />
+		<ClInclude Include="..\..\..\source\lib\utf8.h" />
+		<ClInclude Include="..\..\..\source\lib\adts\bit_buf.h" />
+		<ClInclude Include="..\..\..\source\lib\adts\cache_adt.h" />
+		<ClInclude Include="..\..\..\source\lib\adts\dyn_hash_tbl.h" />
+		<ClInclude Include="..\..\..\source\lib\adts\ring_buf.h" />
+		<ClInclude Include="..\..\..\source\lib\allocators\aligned_allocator.h" />
+		<ClInclude Include="..\..\..\source\lib\allocators\allocator_adapters.h" />
+		<ClInclude Include="..\..\..\source\lib\allocators\allocator_checker.h" />
+		<ClInclude Include="..\..\..\source\lib\allocators\allocator_policies.h" />
+		<ClInclude Include="..\..\..\source\lib\allocators\arena.h" />
+		<ClInclude Include="..\..\..\source\lib\allocators\dynarray.h" />
+		<ClInclude Include="..\..\..\source\lib\allocators\freelist.h" />
+		<ClInclude Include="..\..\..\source\lib\allocators\headerless.h" />
+		<ClInclude Include="..\..\..\source\lib\allocators\overrun_protector.h" />
+		<ClInclude Include="..\..\..\source\lib\allocators\page_aligned.h" />
+		<ClInclude Include="..\..\..\source\lib\allocators\pool.h" />
+		<ClInclude Include="..\..\..\source\lib\allocators\shared_ptr.h" />
+		<ClInclude Include="..\..\..\source\lib\allocators\unique_range.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\curl.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\dbghelp.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\dbghelp_funcs.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\enet.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\glext_funcs.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\libjpeg.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\libsdl.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\libsdl_fwd.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\openal.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\opengl.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\openmp.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\png.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\powrprof.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\suppress_boost_warnings.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\vorbis.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\wxwidgets.h" />
+		<ClInclude Include="..\..\..\source\lib\external_libraries\zlib.h" />
+		<ClInclude Include="..\..\..\source\lib\file\file.h" />
+		<ClInclude Include="..\..\..\source\lib\file\file_system.h" />
+		<ClInclude Include="..\..\..\source\lib\file\archive\archive.h" />
+		<ClInclude Include="..\..\..\source\lib\file\archive\archive_zip.h" />
+		<ClInclude Include="..\..\..\source\lib\file\archive\codec.h" />
+		<ClInclude Include="..\..\..\source\lib\file\archive\codec_zlib.h" />
+		<ClInclude Include="..\..\..\source\lib\file\archive\stream.h" />
+		<ClInclude Include="..\..\..\source\lib\file\common\file_loader.h" />
+		<ClInclude Include="..\..\..\source\lib\file\common\file_stats.h" />
+		<ClInclude Include="..\..\..\source\lib\file\common\real_directory.h" />
+		<ClInclude Include="..\..\..\source\lib\file\common\trace.h" />
+		<ClInclude Include="..\..\..\source\lib\file\io\io.h" />
+		<ClInclude Include="..\..\..\source\lib\file\io\write_buffer.h" />
+		<ClInclude Include="..\..\..\source\lib\file\vfs\file_cache.h" />
+		<ClInclude Include="..\..\..\source\lib\file\vfs\vfs.h" />
+		<ClInclude Include="..\..\..\source\lib\file\vfs\vfs_lookup.h" />
+		<ClInclude Include="..\..\..\source\lib\file\vfs\vfs_path.h" />
+		<ClInclude Include="..\..\..\source\lib\file\vfs\vfs_populate.h" />
+		<ClInclude Include="..\..\..\source\lib\file\vfs\vfs_tree.h" />
+		<ClInclude Include="..\..\..\source\lib\file\vfs\vfs_util.h" />
+		<ClInclude Include="..\..\..\source\lib\pch\pch_boost.h" />
+		<ClInclude Include="..\..\..\source\lib\pch\pch_stdlib.h" />
+		<ClInclude Include="..\..\..\source\lib\pch\pch_warnings.h" />
+		<ClInclude Include="..\..\..\source\lib\posix\posix.h" />
+		<ClInclude Include="..\..\..\source\lib\posix\posix_aio.h" />
+		<ClInclude Include="..\..\..\source\lib\posix\posix_dlfcn.h" />
+		<ClInclude Include="..\..\..\source\lib\posix\posix_errno.h" />
+		<ClInclude Include="..\..\..\source\lib\posix\posix_filesystem.h" />
+		<ClInclude Include="..\..\..\source\lib\posix\posix_mman.h" />
+		<ClInclude Include="..\..\..\source\lib\posix\posix_pthread.h" />
+		<ClInclude Include="..\..\..\source\lib\posix\posix_time.h" />
+		<ClInclude Include="..\..\..\source\lib\posix\posix_types.h" />
+		<ClInclude Include="..\..\..\source\lib\posix\posix_utsname.h" />
+		<ClInclude Include="..\..\..\source\lib\res\handle.h" />
+		<ClInclude Include="..\..\..\source\lib\res\h_mgr.h" />
+		<ClInclude Include="..\..\..\source\lib\res\graphics\cursor.h" />
+		<ClInclude Include="..\..\..\source\lib\res\graphics\ogl_tex.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\acpi.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\clipboard.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\compiler.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\cpu.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\cursor.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\dir_watch.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\filesystem.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\gfx.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\numa.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os_cpu.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\rtl.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\smbios.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\snd.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\stl.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\sysdep.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\vm.h" />
+		<ClInclude Include="..\..\..\source\lib\tex\tex.h" />
+		<ClInclude Include="..\..\..\source\lib\tex\tex_codec.h" />
+		<ClInclude Include="..\..\..\source\lib\tex\tex_internal.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch\ia32\ia32.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch\x86_x64\apic.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch\x86_x64\cache.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch\x86_x64\msr.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch\x86_x64\topology.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch\x86_x64\x86_x64.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\error_dialog.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\mahaf.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wcpu.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wdbg.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wdbg_heap.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wdbg_sym.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wdll_delay_load.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wdll_main.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wdll_ver.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wfirmware.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wgfx.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wgl.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\win.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\winit.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wiocp.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wmi.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wsdl.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wseh.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wsnd.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wstartup.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wutil.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wversion.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\crt_posix.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\no_crt_posix.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\waio.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wdlfcn.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\werrno.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wfilesystem.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wmman.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wposix.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wposix_internal.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wposix_types.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wpthread.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wtime.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wtime_internal.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wutsname.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\counter.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\hpet.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\pit.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\pmt.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\qpc.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\tgt.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\tsc.h" />
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\whrt.h" />
+		<ClInclude Include="..\..\..\source\pch\lowlevel\precompiled.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\lib\app_hooks.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\base32.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\bits.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\byte_order.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\debug.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\debug_stl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\fnv_hash.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\frequency_filter.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\input.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\lib.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\module_init.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\ogl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\path.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\rand.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\regex.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\secure_crt.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\self_test.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\status.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\svn_revision.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\timer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\utf8.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\wsecure_crt.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\arena.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\dynarray.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\freelist.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\headerless.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\page_aligned.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\pool.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\shared_ptr.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\unique_range.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\external_libraries\dbghelp.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\file.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\file_system.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\archive\archive.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\archive\archive_zip.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\archive\codec.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\archive\codec_zlib.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\archive\stream.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\common\file_loader.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\common\file_stats.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\common\real_directory.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\common\trace.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\io\io.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\io\write_buffer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\file_cache.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\vfs.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\vfs_lookup.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\vfs_path.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\vfs_populate.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\vfs_tree.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\vfs_util.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\posix\posix.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\res\h_mgr.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\res\graphics\cursor.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\res\graphics\ogl_tex.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\acpi.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\cpu.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\gfx.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os_cpu.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\smbios.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\snd.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex_bmp.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex_codec.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex_dds.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex_jpg.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex_png.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex_tga.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\arch\ia32\ia32.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\arch\x86_x64\apic.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\arch\x86_x64\cache.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\arch\x86_x64\msr.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\arch\x86_x64\topology.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\arch\x86_x64\x86_x64.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\mahaf.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\manifest.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wclipboard.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wcpu.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wcursor.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wdbg.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wdbg_heap.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wdbg_sym.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wdir_watch.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wdll_delay_load.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wdll_ver.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wfirmware.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wgfx.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\winit.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wiocp.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wmi.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wnuma.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wprintf.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wprofiler.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wsdl.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wseh.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wsnd.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wstartup.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wsysdep.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wutil.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wversion.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wvm.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\waio.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wdlfcn.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wfilesystem.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wmman.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wposix.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wpthread.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wtime.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wutsname.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\counter.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\hpet.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\pmt.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\qpc.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\tgt.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\tsc.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\whrt.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\rtl\msc\msc.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\lowlevel\precompiled.cpp">
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+		</ClCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>

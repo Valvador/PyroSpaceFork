@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="tools">
+			<UniqueIdentifier>{B9179158-04D5-6C4F-B1A1-0CCFF175D85C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas">
+			<UniqueIdentifier>{AB0221B4-1563-FE45-AE9F-36DBABA52272}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI">
+			<UniqueIdentifier>{7CD474A2-9234-FC4A-A402-D1848FEDE030}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\ActorEditor">
+			<UniqueIdentifier>{D7891C8D-EC09-BD41-B64F-7C734A71E94D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\CustomControls">
+			<UniqueIdentifier>{B7AB5202-4FE6-5C43-93E2-B11DB28E75FB}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\CustomControls\Buttons">
+			<UniqueIdentifier>{711B3EC7-2617-6140-B93D-B787E8C704BC}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\CustomControls\Canvas">
+			<UniqueIdentifier>{A30A3E43-4AEC-0141-91A0-8A64638C9B93}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\CustomControls\ColourDialog">
+			<UniqueIdentifier>{52A175A9-5223-F341-BE91-AC29BD13A80A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\CustomControls\DraggableListCtrl">
+			<UniqueIdentifier>{E866ED90-28BF-9748-B838-DA7194A10397}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\CustomControls\EditableListCtrl">
+			<UniqueIdentifier>{0B65F764-8D2F-3743-B07E-EBA4D33D284D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\CustomControls\FileHistory">
+			<UniqueIdentifier>{F9307DD2-CA03-3444-A8E9-C4381C90C353}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\CustomControls\HighResTimer">
+			<UniqueIdentifier>{570DFAE2-B878-D145-B005-EF273206E024}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\CustomControls\MapDialog">
+			<UniqueIdentifier>{4D3891F5-32DC-6147-A698-0B275512E5B8}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\CustomControls\SnapSplitterWindow">
+			<UniqueIdentifier>{F5BEF13F-5FE1-FA4B-B6A8-51D7D665938B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\CustomControls\VirtualDirTreeCtrl">
+			<UniqueIdentifier>{312ED35A-9F2E-3241-85D1-05E8CED16DC2}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\CustomControls\Windows">
+			<UniqueIdentifier>{0EB234DF-D899-8E40-B1D4-95A881EAE4E3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\ErrorReporter">
+			<UniqueIdentifier>{80B7EEE6-F49D-9B44-A52A-F3A9F211223C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\General">
+			<UniqueIdentifier>{00EE18A9-B8F9-DA49-9361-3A0DC84C9DFB}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\Misc">
+			<UniqueIdentifier>{83C66F36-20E0-8D43-AD73-586C95E4B582}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\ScenarioEditor">
+			<UniqueIdentifier>{3A611EB2-915D-964E-AC51-E7786FDB31E4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\ScenarioEditor\Sections">
+			<UniqueIdentifier>{7A1C35C6-7A4F-4B4C-8D6D-7AFDB9C8CF7D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\ScenarioEditor\Sections\Common">
+			<UniqueIdentifier>{5CFEB934-EE2B-7D45-9D15-572083CD4616}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\ScenarioEditor\Sections\Environment">
+			<UniqueIdentifier>{1F2BD75C-C6FA-6543-A251-16AC157202DB}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\ScenarioEditor\Sections\Map">
+			<UniqueIdentifier>{6851BD72-3FF2-1D40-BDEB-8E4C62E1E96B}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\ScenarioEditor\Sections\Object">
+			<UniqueIdentifier>{E2527D83-774E-7043-B954-0158CB9D9583}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\ScenarioEditor\Sections\Player">
+			<UniqueIdentifier>{6BADB449-7BA8-9E4A-B1E8-A2495C3E86E3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\ScenarioEditor\Sections\Terrain">
+			<UniqueIdentifier>{67598493-BBAE-0C47-96C0-1E659FEBE202}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\ScenarioEditor\Tools">
+			<UniqueIdentifier>{DBEBB536-CA4F-FA46-A032-620EB7AC28EE}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="tools\atlas\AtlasUI\ScenarioEditor\Tools\Common">
+			<UniqueIdentifier>{D1F3BAAF-91EF-EF4C-8DD3-E968A39FB4A8}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\ActorEditor.h">
+			<Filter>tools\atlas\AtlasUI\ActorEditor</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\ActorEditorListCtrl.h">
+			<Filter>tools\atlas\AtlasUI\ActorEditor</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\AnimListEditor.h">
+			<Filter>tools\atlas\AtlasUI\ActorEditor</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\PropListEditor.h">
+			<Filter>tools\atlas\AtlasUI\ActorEditor</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\TexListEditor.h">
+			<Filter>tools\atlas\AtlasUI\ActorEditor</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Buttons\ActionButton.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\Buttons</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Buttons\ToolButton.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\Buttons</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Canvas\Canvas.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\Canvas</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\ColourDialog\ColourDialog.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\ColourDialog</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\DraggableListCtrl\DraggableListCtrl.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\DraggableListCtrl</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\DraggableListCtrl\DraggableListCtrlCommands.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\DraggableListCtrl</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\EditableListCtrl.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\EditableListCtrlCommands.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\FieldEditCtrl.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\ListCtrlValidator.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\QuickComboBox.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\QuickFileCtrl.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\QuickTextCtrl.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\FileHistory\FileHistory.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\FileHistory</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\HighResTimer\HighResTimer.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\HighResTimer</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\MapDialog\MapDialog.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\MapDialog</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\SnapSplitterWindow\SnapSplitterWindow.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\SnapSplitterWindow</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\VirtualDirTreeCtrl\virtualdirtreectrl.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\VirtualDirTreeCtrl</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Windows\AtlasDialog.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\Windows</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Windows\AtlasWindow.h">
+			<Filter>tools\atlas\AtlasUI\CustomControls\Windows</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ErrorReporter\ErrorReporter.h">
+			<Filter>tools\atlas\AtlasUI\ErrorReporter</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasClipboard.h">
+			<Filter>tools\atlas\AtlasUI\General</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasEventLoop.h">
+			<Filter>tools\atlas\AtlasUI\General</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasWindowCommand.h">
+			<Filter>tools\atlas\AtlasUI\General</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasWindowCommandProc.h">
+			<Filter>tools\atlas\AtlasUI\General</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\Datafile.h">
+			<Filter>tools\atlas\AtlasUI\General</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\IAtlasSerialiser.h">
+			<Filter>tools\atlas\AtlasUI\General</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\General\Observable.h">
+			<Filter>tools\atlas\AtlasUI\General</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\Misc\actored.h">
+			<Filter>tools\atlas\AtlasUI\Misc</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\Misc\DLLInterface.h">
+			<Filter>tools\atlas\AtlasUI\Misc</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\Misc\KeyMap.h">
+			<Filter>tools\atlas\AtlasUI\Misc</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\Misc\precompiled.h">
+			<Filter>tools\atlas\AtlasUI\Misc</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\ScenarioEditor.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\SectionLayout.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Common\Sidebar.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Common</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Environment\Environment.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Environment</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Environment\LightControl.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Environment</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Map\Map.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Map</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Object\Object.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Object</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Object\VariationControl.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Object</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Player\Player.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Player</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Terrain\Terrain.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Terrain</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\Brushes.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools\Common</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\MiscState.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools\Common</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\ObjectSettings.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools\Common</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\Tools.h">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools\Common</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\ActorEditor.cpp">
+			<Filter>tools\atlas\AtlasUI\ActorEditor</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\ActorEditorListCtrl.cpp">
+			<Filter>tools\atlas\AtlasUI\ActorEditor</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\AnimListEditor.cpp">
+			<Filter>tools\atlas\AtlasUI\ActorEditor</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\PropListEditor.cpp">
+			<Filter>tools\atlas\AtlasUI\ActorEditor</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ActorEditor\TexListEditor.cpp">
+			<Filter>tools\atlas\AtlasUI\ActorEditor</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Buttons\ActionButton.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\Buttons</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Buttons\ToolButton.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\Buttons</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Canvas\Canvas.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\Canvas</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\ColourDialog\ColourDialog.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\ColourDialog</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\DraggableListCtrl\DraggableListCtrl.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\DraggableListCtrl</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\DraggableListCtrl\DraggableListCtrlCommands.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\DraggableListCtrl</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\EditableListCtrl.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\EditableListCtrlCommands.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\FieldEditCtrl.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\ListCtrlValidator.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\QuickComboBox.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\QuickFileCtrl.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\EditableListCtrl\QuickTextCtrl.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\EditableListCtrl</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\FileHistory\FileHistory.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\FileHistory</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\HighResTimer\HighResTimer.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\HighResTimer</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\MapDialog\MapDialog.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\MapDialog</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\SnapSplitterWindow\SnapSplitterWindow.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\SnapSplitterWindow</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\VirtualDirTreeCtrl\virtualdirtreectrl.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\VirtualDirTreeCtrl</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Windows\AtlasDialog.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\Windows</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\CustomControls\Windows\AtlasWindow.cpp">
+			<Filter>tools\atlas\AtlasUI\CustomControls\Windows</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ErrorReporter\ErrorReporter.cpp">
+			<Filter>tools\atlas\AtlasUI\ErrorReporter</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasClipboard.cpp">
+			<Filter>tools\atlas\AtlasUI\General</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasEventLoop.cpp">
+			<Filter>tools\atlas\AtlasUI\General</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasWindowCommand.cpp">
+			<Filter>tools\atlas\AtlasUI\General</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\General\AtlasWindowCommandProc.cpp">
+			<Filter>tools\atlas\AtlasUI\General</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\General\Datafile.cpp">
+			<Filter>tools\atlas\AtlasUI\General</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\General\Observable.cpp">
+			<Filter>tools\atlas\AtlasUI\General</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\Misc\DLLInterface.cpp">
+			<Filter>tools\atlas\AtlasUI\Misc</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\Misc\KeyMap.cpp">
+			<Filter>tools\atlas\AtlasUI\Misc</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\Misc\precompiled.cpp">
+			<Filter>tools\atlas\AtlasUI\Misc</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\ScenarioEditor.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\SectionLayout.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Common\Sidebar.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Common</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Environment\Environment.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Environment</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Environment\LightControl.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Environment</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Map\Map.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Map</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Object\Object.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Object</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Object\VariationControl.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Object</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Player\Player.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Player</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Sections\Terrain\Terrain.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Sections\Terrain</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\ActorViewerTool.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\AlterElevation.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\FillTerrain.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\FlattenElevation.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\PaintTerrain.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\PikeElevation.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\PlaceObject.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\ReplaceTerrain.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\SmoothElevation.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\TransformObject.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\Brushes.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools\Common</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\MiscState.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools\Common</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\ObjectSettings.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools\Common</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\tools\atlas\AtlasUI\ScenarioEditor\Tools\Common\Tools.cpp">
+			<Filter>tools\atlas\AtlasUI\ScenarioEditor\Tools\Common</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="..\..\..\source\tools\atlas\AtlasUI\Misc\atlas.rc">
+			<Filter>tools\atlas\AtlasUI\Misc</Filter>
+		</ResourceCompile>
+	</ItemGroup>
+</Project>

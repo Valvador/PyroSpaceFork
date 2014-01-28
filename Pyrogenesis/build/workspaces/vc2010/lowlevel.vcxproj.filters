@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="lib">
+			<UniqueIdentifier>{05BAB61E-1AE6-154A-A6F3-9E51653C3EE5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\adts">
+			<UniqueIdentifier>{C1E60217-8689-8245-9476-FE3944DB6DAC}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\allocators">
+			<UniqueIdentifier>{1E6C3D20-6E65-FE4F-8850-D05296FC2E96}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\external_libraries">
+			<UniqueIdentifier>{9D03147E-8F3F-B541-9E66-C83F0E45AA29}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\file">
+			<UniqueIdentifier>{0C03145F-30E2-CE44-83B6-8EB5F86A79BE}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\file\archive">
+			<UniqueIdentifier>{3C03C341-CA37-834C-9C0C-787CCDF6A3E1}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\file\common">
+			<UniqueIdentifier>{50A8E6B4-6635-5A4C-A12A-89906AEA3D3D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\file\io">
+			<UniqueIdentifier>{EE20CD8E-B24A-C94F-B544-B1858E448BD0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\file\vfs">
+			<UniqueIdentifier>{520AEE8C-B38F-3149-83D6-8F8B2D55D18C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\pch">
+			<UniqueIdentifier>{EA348715-F1EC-6741-8034-AC04D8B44FB0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\posix">
+			<UniqueIdentifier>{40F20E47-D361-A34B-AEE1-1FAF28D79CD4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\res">
+			<UniqueIdentifier>{1809648D-0CE4-374D-AC96-8618210233E7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\res\graphics">
+			<UniqueIdentifier>{0DAA9331-571E-1143-B7D9-2ADC61F6DD9F}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep">
+			<UniqueIdentifier>{C156702E-D7C9-8E44-8A14-A6C149AE2B65}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\tex">
+			<UniqueIdentifier>{027BDAF2-0249-5242-B9F6-E8C209579A00}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\arch">
+			<UniqueIdentifier>{B633268D-8E98-A749-A31F-470B7D235AE4}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\arch\ia32">
+			<UniqueIdentifier>{6DD48C12-861C-5D4A-AB7F-251F3BA76CF1}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\arch\x86_x64">
+			<UniqueIdentifier>{425BC9CA-1BC8-8F47-A62F-B4C8C14B719D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\os">
+			<UniqueIdentifier>{5FB1939E-3E9F-4A4B-9F37-D86ACE04BFB3}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\os\win">
+			<UniqueIdentifier>{3EE16A7A-11D5-5944-A1A7-F3D6A0216ABD}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\os\win\wposix">
+			<UniqueIdentifier>{C043E2B0-DFF1-9544-9EF8-730944989976}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\os\win\whrt">
+			<UniqueIdentifier>{09B6CFB0-6C54-EA4C-9727-65F84C5FCCCE}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch">
+			<UniqueIdentifier>{7C42D90F-3C72-BA45-AC30-AD6BE21F9C2D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch\lowlevel">
+			<UniqueIdentifier>{92DD3B50-8A5A-B043-94FB-FE6A70958D17}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\rtl">
+			<UniqueIdentifier>{58070571-E3AF-FD4D-9F0F-7AFB4F1217B5}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\rtl\msc">
+			<UniqueIdentifier>{F03B8A1C-8072-244B-8499-BE29A06DC69F}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\lib\alignment.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\app_hooks.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\base32.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\bits.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\byte_order.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\code_annotation.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\code_generation.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\config.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\config2.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\debug.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\debug_stl.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\fnv_hash.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\frequency_filter.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\input.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\lib.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\lib_api.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\module_init.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\ogl.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\os_path.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\path.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\pointer_typedefs.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\precompiled.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\ps_stl.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\rand.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\regex.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\secure_crt.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\self_test.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\status.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\svn_revision.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\timer.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\types.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\utf8.h">
+			<Filter>lib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\adts\bit_buf.h">
+			<Filter>lib\adts</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\adts\cache_adt.h">
+			<Filter>lib\adts</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\adts\dyn_hash_tbl.h">
+			<Filter>lib\adts</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\adts\ring_buf.h">
+			<Filter>lib\adts</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\allocators\aligned_allocator.h">
+			<Filter>lib\allocators</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\allocators\allocator_adapters.h">
+			<Filter>lib\allocators</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\allocators\allocator_checker.h">
+			<Filter>lib\allocators</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\allocators\allocator_policies.h">
+			<Filter>lib\allocators</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\allocators\arena.h">
+			<Filter>lib\allocators</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\allocators\dynarray.h">
+			<Filter>lib\allocators</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\allocators\freelist.h">
+			<Filter>lib\allocators</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\allocators\headerless.h">
+			<Filter>lib\allocators</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\allocators\overrun_protector.h">
+			<Filter>lib\allocators</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\allocators\page_aligned.h">
+			<Filter>lib\allocators</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\allocators\pool.h">
+			<Filter>lib\allocators</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\allocators\shared_ptr.h">
+			<Filter>lib\allocators</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\allocators\unique_range.h">
+			<Filter>lib\allocators</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\curl.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\dbghelp.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\dbghelp_funcs.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\enet.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\glext_funcs.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\libjpeg.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\libsdl.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\libsdl_fwd.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\openal.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\opengl.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\openmp.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\png.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\powrprof.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\suppress_boost_warnings.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\vorbis.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\wxwidgets.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\external_libraries\zlib.h">
+			<Filter>lib\external_libraries</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\file.h">
+			<Filter>lib\file</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\file_system.h">
+			<Filter>lib\file</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\archive\archive.h">
+			<Filter>lib\file\archive</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\archive\archive_zip.h">
+			<Filter>lib\file\archive</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\archive\codec.h">
+			<Filter>lib\file\archive</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\archive\codec_zlib.h">
+			<Filter>lib\file\archive</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\archive\stream.h">
+			<Filter>lib\file\archive</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\common\file_loader.h">
+			<Filter>lib\file\common</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\common\file_stats.h">
+			<Filter>lib\file\common</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\common\real_directory.h">
+			<Filter>lib\file\common</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\common\trace.h">
+			<Filter>lib\file\common</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\io\io.h">
+			<Filter>lib\file\io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\io\write_buffer.h">
+			<Filter>lib\file\io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\vfs\file_cache.h">
+			<Filter>lib\file\vfs</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\vfs\vfs.h">
+			<Filter>lib\file\vfs</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\vfs\vfs_lookup.h">
+			<Filter>lib\file\vfs</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\vfs\vfs_path.h">
+			<Filter>lib\file\vfs</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\vfs\vfs_populate.h">
+			<Filter>lib\file\vfs</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\vfs\vfs_tree.h">
+			<Filter>lib\file\vfs</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\file\vfs\vfs_util.h">
+			<Filter>lib\file\vfs</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\pch\pch_boost.h">
+			<Filter>lib\pch</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\pch\pch_stdlib.h">
+			<Filter>lib\pch</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\pch\pch_warnings.h">
+			<Filter>lib\pch</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\posix\posix.h">
+			<Filter>lib\posix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\posix\posix_aio.h">
+			<Filter>lib\posix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\posix\posix_dlfcn.h">
+			<Filter>lib\posix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\posix\posix_errno.h">
+			<Filter>lib\posix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\posix\posix_filesystem.h">
+			<Filter>lib\posix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\posix\posix_mman.h">
+			<Filter>lib\posix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\posix\posix_pthread.h">
+			<Filter>lib\posix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\posix\posix_time.h">
+			<Filter>lib\posix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\posix\posix_types.h">
+			<Filter>lib\posix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\posix\posix_utsname.h">
+			<Filter>lib\posix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\res\handle.h">
+			<Filter>lib\res</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\res\h_mgr.h">
+			<Filter>lib\res</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\res\graphics\cursor.h">
+			<Filter>lib\res\graphics</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\res\graphics\ogl_tex.h">
+			<Filter>lib\res\graphics</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\acpi.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\clipboard.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\compiler.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\cpu.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\cursor.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\dir_watch.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\filesystem.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\gfx.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\numa.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os_cpu.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\rtl.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\smbios.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\snd.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\stl.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\sysdep.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\vm.h">
+			<Filter>lib\sysdep</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\tex\tex.h">
+			<Filter>lib\tex</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\tex\tex_codec.h">
+			<Filter>lib\tex</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\tex\tex_internal.h">
+			<Filter>lib\tex</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch\ia32\ia32.h">
+			<Filter>lib\sysdep\arch\ia32</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch\x86_x64\apic.h">
+			<Filter>lib\sysdep\arch\x86_x64</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch\x86_x64\cache.h">
+			<Filter>lib\sysdep\arch\x86_x64</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch\x86_x64\msr.h">
+			<Filter>lib\sysdep\arch\x86_x64</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch\x86_x64\topology.h">
+			<Filter>lib\sysdep\arch\x86_x64</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\arch\x86_x64\x86_x64.h">
+			<Filter>lib\sysdep\arch\x86_x64</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\error_dialog.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\mahaf.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wcpu.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wdbg.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wdbg_heap.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wdbg_sym.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wdll_delay_load.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wdll_main.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wdll_ver.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wfirmware.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wgfx.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wgl.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\win.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\winit.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wiocp.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wmi.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wsdl.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wseh.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wsnd.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wstartup.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wutil.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wversion.h">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\crt_posix.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\no_crt_posix.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\waio.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wdlfcn.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\werrno.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wfilesystem.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wmman.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wposix.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wposix_internal.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wposix_types.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wpthread.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wtime.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wtime_internal.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\wposix\wutsname.h">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\counter.h">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\hpet.h">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\pit.h">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\pmt.h">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\qpc.h">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\tgt.h">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\tsc.h">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\lib\sysdep\os\win\whrt\whrt.h">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\pch\lowlevel\precompiled.h">
+			<Filter>pch\lowlevel</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\lib\app_hooks.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\base32.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\bits.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\byte_order.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\debug.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\debug_stl.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\fnv_hash.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\frequency_filter.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\input.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\lib.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\module_init.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\ogl.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\path.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\rand.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\regex.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\secure_crt.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\self_test.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\status.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\svn_revision.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\timer.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\utf8.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\wsecure_crt.cpp">
+			<Filter>lib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\arena.cpp">
+			<Filter>lib\allocators</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\dynarray.cpp">
+			<Filter>lib\allocators</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\freelist.cpp">
+			<Filter>lib\allocators</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\headerless.cpp">
+			<Filter>lib\allocators</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\page_aligned.cpp">
+			<Filter>lib\allocators</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\pool.cpp">
+			<Filter>lib\allocators</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\shared_ptr.cpp">
+			<Filter>lib\allocators</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\allocators\unique_range.cpp">
+			<Filter>lib\allocators</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\external_libraries\dbghelp.cpp">
+			<Filter>lib\external_libraries</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\file.cpp">
+			<Filter>lib\file</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\file_system.cpp">
+			<Filter>lib\file</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\archive\archive.cpp">
+			<Filter>lib\file\archive</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\archive\archive_zip.cpp">
+			<Filter>lib\file\archive</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\archive\codec.cpp">
+			<Filter>lib\file\archive</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\archive\codec_zlib.cpp">
+			<Filter>lib\file\archive</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\archive\stream.cpp">
+			<Filter>lib\file\archive</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\common\file_loader.cpp">
+			<Filter>lib\file\common</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\common\file_stats.cpp">
+			<Filter>lib\file\common</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\common\real_directory.cpp">
+			<Filter>lib\file\common</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\common\trace.cpp">
+			<Filter>lib\file\common</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\io\io.cpp">
+			<Filter>lib\file\io</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\io\write_buffer.cpp">
+			<Filter>lib\file\io</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\file_cache.cpp">
+			<Filter>lib\file\vfs</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\vfs.cpp">
+			<Filter>lib\file\vfs</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\vfs_lookup.cpp">
+			<Filter>lib\file\vfs</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\vfs_path.cpp">
+			<Filter>lib\file\vfs</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\vfs_populate.cpp">
+			<Filter>lib\file\vfs</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\vfs_tree.cpp">
+			<Filter>lib\file\vfs</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\file\vfs\vfs_util.cpp">
+			<Filter>lib\file\vfs</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\posix\posix.cpp">
+			<Filter>lib\posix</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\res\h_mgr.cpp">
+			<Filter>lib\res</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\res\graphics\cursor.cpp">
+			<Filter>lib\res\graphics</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\res\graphics\ogl_tex.cpp">
+			<Filter>lib\res\graphics</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\acpi.cpp">
+			<Filter>lib\sysdep</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\cpu.cpp">
+			<Filter>lib\sysdep</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\gfx.cpp">
+			<Filter>lib\sysdep</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os_cpu.cpp">
+			<Filter>lib\sysdep</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\smbios.cpp">
+			<Filter>lib\sysdep</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\snd.cpp">
+			<Filter>lib\sysdep</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex.cpp">
+			<Filter>lib\tex</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex_bmp.cpp">
+			<Filter>lib\tex</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex_codec.cpp">
+			<Filter>lib\tex</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex_dds.cpp">
+			<Filter>lib\tex</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex_jpg.cpp">
+			<Filter>lib\tex</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex_png.cpp">
+			<Filter>lib\tex</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\tex\tex_tga.cpp">
+			<Filter>lib\tex</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\arch\ia32\ia32.cpp">
+			<Filter>lib\sysdep\arch\ia32</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\arch\x86_x64\apic.cpp">
+			<Filter>lib\sysdep\arch\x86_x64</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\arch\x86_x64\cache.cpp">
+			<Filter>lib\sysdep\arch\x86_x64</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\arch\x86_x64\msr.cpp">
+			<Filter>lib\sysdep\arch\x86_x64</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\arch\x86_x64\topology.cpp">
+			<Filter>lib\sysdep\arch\x86_x64</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\arch\x86_x64\x86_x64.cpp">
+			<Filter>lib\sysdep\arch\x86_x64</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\mahaf.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\manifest.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wclipboard.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wcpu.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wcursor.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wdbg.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wdbg_heap.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wdbg_sym.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wdir_watch.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wdll_delay_load.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wdll_ver.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wfirmware.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wgfx.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\winit.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wiocp.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wmi.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wnuma.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wprintf.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wprofiler.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wsdl.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wseh.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wsnd.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wstartup.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wsysdep.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wutil.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wversion.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wvm.cpp">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\waio.cpp">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wdlfcn.cpp">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wfilesystem.cpp">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wmman.cpp">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wposix.cpp">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wpthread.cpp">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wtime.cpp">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\wposix\wutsname.cpp">
+			<Filter>lib\sysdep\os\win\wposix</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\counter.cpp">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\hpet.cpp">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\pmt.cpp">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\qpc.cpp">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\tgt.cpp">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\tsc.cpp">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\os\win\whrt\whrt.cpp">
+			<Filter>lib\sysdep\os\win\whrt</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\lib\sysdep\rtl\msc\msc.cpp">
+			<Filter>lib\sysdep\rtl\msc</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\lowlevel\precompiled.cpp">
+			<Filter>pch\lowlevel</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

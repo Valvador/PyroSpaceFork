@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{B18FE55C-282F-064E-ADFC-4ABE14F50C1C}</ProjectGuid>
+		<RootNamespace>graphics</RootNamespace>
+		<Keyword>Win32Proj</Keyword>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseDebugLibraries>true</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\graphics_Release\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">graphics</TargetName>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\binaries\system\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\graphics_Debug\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">graphics_dbg</TargetName>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\graphics;..\..\..\source;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\nvtt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;NVTT_SHARED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>false</MinimalRebuild>
+			<StringPooling>true</StringPooling>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>NDEBUG;CONFIG_FINAL=1;LIB_STATIC_LINK;USING_PCH;NVTT_SHARED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\graphics;..\..\..\source;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\nvtt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	<Lib>
+		<OutputFile>$(OutDir)graphics.lib</OutputFile>
+	</Lib>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<ProgramDataBaseFileName>$(OutDir)graphics.pdb</ProgramDataBaseFileName>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\graphics;..\..\..\source;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\nvtt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;NVTT_SHARED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>true</MinimalRebuild>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<SmallerTypeCheck>true</SmallerTypeCheck>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeTypeInfo>false</RuntimeTypeInfo>
+			<TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>DEBUG;LIB_STATIC_LINK;USING_PCH;NVTT_SHARED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\..\source\pch\graphics;..\..\..\source;..\..\..\libraries\win32\opengl\include;..\..\..\libraries\win32\sdl\include\SDL;..\..\..\libraries\source\spidermonkey\include-win32;..\..\..\libraries\win32\boost\include;..\..\..\libraries\source\nvtt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	<Lib>
+		<OutputFile>$(OutDir)graphics_dbg.lib</OutputFile>
+	</Lib>
+		<Link>
+			<SubSystem>Windows</SubSystem>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<ProgramDataBaseFileName>$(OutDir)graphics_dbg.pdb</ProgramDataBaseFileName>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\graphics\Camera.h" />
+		<ClInclude Include="..\..\..\source\graphics\CinemaTrack.h" />
+		<ClInclude Include="..\..\..\source\graphics\ColladaManager.h" />
+		<ClInclude Include="..\..\..\source\graphics\Color.h" />
+		<ClInclude Include="..\..\..\source\graphics\Decal.h" />
+		<ClInclude Include="..\..\..\source\graphics\Entity.h" />
+		<ClInclude Include="..\..\..\source\graphics\Font.h" />
+		<ClInclude Include="..\..\..\source\graphics\FontManager.h" />
+		<ClInclude Include="..\..\..\source\graphics\FontMetrics.h" />
+		<ClInclude Include="..\..\..\source\graphics\Frustum.h" />
+		<ClInclude Include="..\..\..\source\graphics\GameView.h" />
+		<ClInclude Include="..\..\..\source\graphics\HeightMipmap.h" />
+		<ClInclude Include="..\..\..\source\graphics\HFTracer.h" />
+		<ClInclude Include="..\..\..\source\graphics\LightEnv.h" />
+		<ClInclude Include="..\..\..\source\graphics\LOSTexture.h" />
+		<ClInclude Include="..\..\..\source\graphics\MapGenerator.h" />
+		<ClInclude Include="..\..\..\source\graphics\MapIO.h" />
+		<ClInclude Include="..\..\..\source\graphics\MapReader.h" />
+		<ClInclude Include="..\..\..\source\graphics\MapWriter.h" />
+		<ClInclude Include="..\..\..\source\graphics\Material.h" />
+		<ClInclude Include="..\..\..\source\graphics\MaterialManager.h" />
+		<ClInclude Include="..\..\..\source\graphics\MeshManager.h" />
+		<ClInclude Include="..\..\..\source\graphics\MiniPatch.h" />
+		<ClInclude Include="..\..\..\source\graphics\Model.h" />
+		<ClInclude Include="..\..\..\source\graphics\ModelAbstract.h" />
+		<ClInclude Include="..\..\..\source\graphics\ModelDef.h" />
+		<ClInclude Include="..\..\..\source\graphics\ObjectBase.h" />
+		<ClInclude Include="..\..\..\source\graphics\ObjectEntry.h" />
+		<ClInclude Include="..\..\..\source\graphics\ObjectManager.h" />
+		<ClInclude Include="..\..\..\source\graphics\Overlay.h" />
+		<ClInclude Include="..\..\..\source\graphics\ParticleEmitter.h" />
+		<ClInclude Include="..\..\..\source\graphics\ParticleEmitterType.h" />
+		<ClInclude Include="..\..\..\source\graphics\ParticleManager.h" />
+		<ClInclude Include="..\..\..\source\graphics\Patch.h" />
+		<ClInclude Include="..\..\..\source\graphics\RenderableObject.h" />
+		<ClInclude Include="..\..\..\source\graphics\SColor.h" />
+		<ClInclude Include="..\..\..\source\graphics\ShaderDefines.h" />
+		<ClInclude Include="..\..\..\source\graphics\ShaderManager.h" />
+		<ClInclude Include="..\..\..\source\graphics\ShaderProgram.h" />
+		<ClInclude Include="..\..\..\source\graphics\ShaderTechnique.h" />
+		<ClInclude Include="..\..\..\source\graphics\SkeletonAnim.h" />
+		<ClInclude Include="..\..\..\source\graphics\SkeletonAnimDef.h" />
+		<ClInclude Include="..\..\..\source\graphics\SkeletonAnimManager.h" />
+		<ClInclude Include="..\..\..\source\graphics\Terrain.h" />
+		<ClInclude Include="..\..\..\source\graphics\TerrainProperties.h" />
+		<ClInclude Include="..\..\..\source\graphics\TerrainTextureEntry.h" />
+		<ClInclude Include="..\..\..\source\graphics\TerrainTextureManager.h" />
+		<ClInclude Include="..\..\..\source\graphics\TerritoryBoundary.h" />
+		<ClInclude Include="..\..\..\source\graphics\TerritoryTexture.h" />
+		<ClInclude Include="..\..\..\source\graphics\TextRenderer.h" />
+		<ClInclude Include="..\..\..\source\graphics\Texture.h" />
+		<ClInclude Include="..\..\..\source\graphics\TextureConverter.h" />
+		<ClInclude Include="..\..\..\source\graphics\TextureManager.h" />
+		<ClInclude Include="..\..\..\source\graphics\Unit.h" />
+		<ClInclude Include="..\..\..\source\graphics\UnitAnimation.h" />
+		<ClInclude Include="..\..\..\source\graphics\UnitManager.h" />
+		<ClInclude Include="..\..\..\source\graphics\scripting\JSInterface_GameView.h" />
+		<ClInclude Include="..\..\..\source\renderer\AlphaMapCalculator.h" />
+		<ClInclude Include="..\..\..\source\renderer\BlendShapes.h" />
+		<ClInclude Include="..\..\..\source\renderer\DecalRData.h" />
+		<ClInclude Include="..\..\..\source\renderer\HWLightingModelRenderer.h" />
+		<ClInclude Include="..\..\..\source\renderer\InstancingModelRenderer.h" />
+		<ClInclude Include="..\..\..\source\renderer\MikktspaceWrap.h" />
+		<ClInclude Include="..\..\..\source\renderer\ModelRenderer.h" />
+		<ClInclude Include="..\..\..\source\renderer\ModelVertexRenderer.h" />
+		<ClInclude Include="..\..\..\source\renderer\OverlayRenderer.h" />
+		<ClInclude Include="..\..\..\source\renderer\ParticleRenderer.h" />
+		<ClInclude Include="..\..\..\source\renderer\PatchRData.h" />
+		<ClInclude Include="..\..\..\source\renderer\PostprocManager.h" />
+		<ClInclude Include="..\..\..\source\renderer\Renderer.h" />
+		<ClInclude Include="..\..\..\source\renderer\RenderModifiers.h" />
+		<ClInclude Include="..\..\..\source\renderer\Scene.h" />
+		<ClInclude Include="..\..\..\source\renderer\ShadowMap.h" />
+		<ClInclude Include="..\..\..\source\renderer\SkyManager.h" />
+		<ClInclude Include="..\..\..\source\renderer\TerrainOverlay.h" />
+		<ClInclude Include="..\..\..\source\renderer\TerrainRenderer.h" />
+		<ClInclude Include="..\..\..\source\renderer\TexturedLineRData.h" />
+		<ClInclude Include="..\..\..\source\renderer\TimeManager.h" />
+		<ClInclude Include="..\..\..\source\renderer\VertexArray.h" />
+		<ClInclude Include="..\..\..\source\renderer\VertexBuffer.h" />
+		<ClInclude Include="..\..\..\source\renderer\VertexBufferManager.h" />
+		<ClInclude Include="..\..\..\source\renderer\WaterManager.h" />
+		<ClInclude Include="..\..\..\source\renderer\scripting\JSInterface_Renderer.h" />
+		<ClInclude Include="..\..\..\source\third_party\mikktspace\mikktspace.h" />
+		<ClInclude Include="..\..\..\source\third_party\mikktspace\weldmesh.h" />
+		<ClInclude Include="..\..\..\source\pch\graphics\precompiled.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\graphics\Camera.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\CinemaTrack.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ColladaManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\Color.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\Decal.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\Font.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\FontManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\FontMetrics.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\Frustum.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\GameView.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\HeightMipmap.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\HFTracer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\LightEnv.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\LOSTexture.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\MapGenerator.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\MapReader.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\MapWriter.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\Material.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\MaterialManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\MeshManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\MiniPatch.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\Model.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ModelAbstract.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ModelDef.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ObjectBase.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ObjectEntry.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ObjectManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\Overlay.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ParticleEmitter.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ParticleEmitterType.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ParticleManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\Patch.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ShaderDefines.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ShaderManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ShaderProgram.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ShaderProgramFFP.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\ShaderTechnique.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\SkeletonAnimDef.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\SkeletonAnimManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\Terrain.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\TerrainProperties.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\TerrainTextureEntry.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\TerrainTextureManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\TerritoryBoundary.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\TerritoryTexture.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\TextRenderer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\TextureConverter.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\TextureManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\Unit.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\UnitAnimation.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\UnitManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\graphics\scripting\JSInterface_GameView.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\AlphaMapCalculator.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\DecalRData.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\HWLightingModelRenderer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\InstancingModelRenderer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\MikktspaceWrap.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\ModelRenderer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\OverlayRenderer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\ParticleRenderer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\PatchRData.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\PostprocManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\Renderer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\RenderModifiers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\Scene.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\ShadowMap.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\SkyManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\TerrainOverlay.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\TerrainRenderer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\TexturedLineRData.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\TimeManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\VertexArray.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\VertexBuffer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\VertexBufferManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\WaterManager.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\renderer\scripting\JSInterface_Renderer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\third_party\mikktspace\mikktspace.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\third_party\mikktspace\weldmesh.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\graphics\precompiled.cpp">
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+		</ClCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>

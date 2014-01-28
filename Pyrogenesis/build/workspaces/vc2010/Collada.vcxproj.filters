@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="collada">
+			<UniqueIdentifier>{3C80F20F-F12D-CA4C-A08C-B69A00EC257D}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\collada\CommonConvert.h">
+			<Filter>collada</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\collada\Decompose.h">
+			<Filter>collada</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\collada\DLL.h">
+			<Filter>collada</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\collada\GeomReindex.h">
+			<Filter>collada</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\collada\Maths.h">
+			<Filter>collada</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\collada\PMDConvert.h">
+			<Filter>collada</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\collada\precompiled.h">
+			<Filter>collada</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\collada\PSAConvert.h">
+			<Filter>collada</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\collada\StdSkeletons.h">
+			<Filter>collada</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\collada\XMLFix.h">
+			<Filter>collada</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\collada\CommonConvert.cpp">
+			<Filter>collada</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\Decompose.cpp">
+			<Filter>collada</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\DLL.cpp">
+			<Filter>collada</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\GeomReindex.cpp">
+			<Filter>collada</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\Maths.cpp">
+			<Filter>collada</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\PMDConvert.cpp">
+			<Filter>collada</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\precompiled.cpp">
+			<Filter>collada</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\PSAConvert.cpp">
+			<Filter>collada</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\StdSkeletons.cpp">
+			<Filter>collada</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\collada\XMLFix.cpp">
+			<Filter>collada</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

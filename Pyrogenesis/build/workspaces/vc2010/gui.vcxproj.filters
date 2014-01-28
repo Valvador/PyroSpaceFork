@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="gui">
+			<UniqueIdentifier>{4A2AA680-89BB-1F41-B397-A1E90D47B5C0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="gui\scripting">
+			<UniqueIdentifier>{270F8585-D64A-E94F-8178-E58CC253D2FC}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch">
+			<UniqueIdentifier>{277C1AD8-2CED-804C-8632-DA3C8D020A39}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="pch\gui">
+			<UniqueIdentifier>{FF059F72-E469-ED43-997F-8DAA599B86B9}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\..\source\gui\CButton.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\CCheckBox.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\CDropDown.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\CGUI.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\CGUIList.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\CGUIScrollBarVertical.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\CGUISprite.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\CImage.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\CInput.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\CList.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\COList.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\CProgressBar.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\CRadioButton.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\CText.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\CTooltip.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\GUI.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\GUIbase.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\GUIManager.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\GUIRenderer.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\GUItext.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\GUITooltip.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\GUItypes.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\GUIutil.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\IGUIButtonBehavior.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\IGUIObject.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\IGUIScrollBar.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\IGUIScrollBarOwner.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\IGUITextOwner.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\MiniMap.h">
+			<Filter>gui</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\scripting\JSInterface_GUITypes.h">
+			<Filter>gui\scripting</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\scripting\JSInterface_IGUIObject.h">
+			<Filter>gui\scripting</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\gui\scripting\ScriptFunctions.h">
+			<Filter>gui\scripting</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\source\pch\gui\precompiled.h">
+			<Filter>pch\gui</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\gui\CButton.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CCheckBox.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CDropDown.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CGUI.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CGUIScrollBarVertical.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CGUISprite.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CImage.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CInput.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CList.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\COList.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CProgressBar.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CRadioButton.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CText.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\CTooltip.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\GUIbase.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\GUIManager.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\GUIRenderer.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\GUItext.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\GUITooltip.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\GUIutil.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\IGUIButtonBehavior.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\IGUIObject.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\IGUIScrollBar.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\IGUIScrollBarOwner.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\IGUITextOwner.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\MiniMap.cpp">
+			<Filter>gui</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\scripting\GuiScriptConversions.cpp">
+			<Filter>gui\scripting</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\scripting\JSInterface_GUITypes.cpp">
+			<Filter>gui\scripting</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\scripting\JSInterface_IGUIObject.cpp">
+			<Filter>gui\scripting</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\gui\scripting\ScriptFunctions.cpp">
+			<Filter>gui\scripting</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\source\pch\gui\precompiled.cpp">
+			<Filter>pch\gui</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

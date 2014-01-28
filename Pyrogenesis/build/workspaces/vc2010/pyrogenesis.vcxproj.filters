@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="lib">
+			<UniqueIdentifier>{378A49C9-F8C9-0348-A3D7-42A5BE3C84D7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep">
+			<UniqueIdentifier>{1909C723-9D40-AE42-836A-5C574CD7C249}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\os">
+			<UniqueIdentifier>{D2138C12-4915-FD4D-998E-9016A6104572}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="lib\sysdep\os\win">
+			<UniqueIdentifier>{84D57D2C-D3A8-4241-8D82-C334E590FED2}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\..\source\main.cpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="..\..\..\source\lib\sysdep\os\win\icon.rc">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ResourceCompile>
+		<ResourceCompile Include="..\..\..\source\lib\sysdep\os\win\error_dialog.rc">
+			<Filter>lib\sysdep\os\win</Filter>
+		</ResourceCompile>
+	</ItemGroup>
+</Project>
